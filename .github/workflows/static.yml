@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./La_Fabrique_de_Leon_V1.0
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
