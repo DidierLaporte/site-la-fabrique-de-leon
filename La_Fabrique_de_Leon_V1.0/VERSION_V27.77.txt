@@ -1,0 +1,8 @@
+La Fabrique de Léon — Site collaboratif
+Version V27.77 — 5 novembre 2026
+
+Mise à jour des archives des éditions :
+- 2019 : ajout des liens pour Soul Kitchen et The SuperSoul Brothers ; ajout d’un lien de recherche pour Piva, dont le lien officiel reste à confirmer.
+- 2017 : ajout du site de Kolinga et des références disponibles pour Wanagroove (site historique et archive de concert).
+
+Base : V27.76. Aucun autre contenu du site n’a été volontairement modifié.

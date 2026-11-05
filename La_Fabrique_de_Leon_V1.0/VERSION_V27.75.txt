@@ -1,0 +1,5 @@
+La Fabrique de Léon – Site collaboratif
+Version V27.75
+
+Évolution : galerie Souvenirs en images. Un clic ou une activation clavier sur une photo l'ouvre en grand dans une visionneuse, avec fermeture par croix, clic hors image ou touche Échap. Compatible mobile et ordinateur.
+Base : V27.74. Les autres pages et contenus sont conservés.

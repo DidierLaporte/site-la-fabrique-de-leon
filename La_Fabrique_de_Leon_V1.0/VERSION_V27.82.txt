@@ -1,0 +1,9 @@
+LA FABRIQUE DE LÉON — VERSION V27.82
+
+Évolution depuis la V27.81 :
+- Visionneuse photo améliorée dans Souvenirs en images.
+- Navigation précédente / suivante limitée à l’album de l’année ouvert.
+- Compteur de photos (ex. : Photo 3 sur 18).
+- Navigation par flèches du clavier et balayage horizontal sur téléphone.
+- Commandes adaptées au tactile et aux petits écrans.
+- Conservation des améliorations mobiles et des liens externes de la V27.81.

@@ -1,0 +1,7 @@
+LA FABRIQUE DE LÉON — SITE COLLABORATIF
+VERSION V27.73
+
+Page « Soutenons Léon en Rue Libre 2027 » : suppression de la mention de projet soumis à validation du conseil d’administration, la collecte étant acquise et publiée.
+Ajout d’une cinquième tuile « Un autre montant ? » qui renvoie directement vers HelloAsso pour permettre au donateur de saisir un montant libre sur la plateforme.
+Les quatre montants indicatifs existants (20 €, 50 €, 100 €, 200 €) et leurs indications fiscales sont conservés.
+Les autres pages, documents et ressources du site collaboratif sont préservés.

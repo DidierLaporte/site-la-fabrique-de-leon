@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Soutenons Léon en Rue Libre 2027 — La Fabrique de Léon</title>
+<meta name="description" content="Soutenons Léon en Rue Libre 2027 : participez à la collecte officielle de La Fabrique de Léon."/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+body[data-fab-page="campagne-2027"] #campaign-preview{display:block!important}
+.campaign-draft{max-width:1120px;margin:1rem auto 3rem;padding:0 1rem;color:#18234a}
+.campaign-status{display:inline-flex;align-items:center;gap:.5rem;background:#fff3b0;color:#4b2a00;border:2px solid #ffcb35;border-radius:999px;padding:.48rem .85rem;font-size:.78rem;font-weight:900;letter-spacing:.035em}
+.campaign-hero{display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden;border-radius:24px;background:#ffcf35;color:#19224a;box-shadow:0 12px 0 #e93c72;margin-top:.8rem;border:3px solid #19224a}
+.campaign-hero-copy{padding:clamp(1.2rem,3vw,2.5rem);align-self:center}
+.campaign-kicker{display:inline-block;font-weight:950;text-transform:uppercase;letter-spacing:.11em;font-size:.76rem;color:#fff;background:#e93470;padding:.4rem .65rem;border-radius:6px;transform:rotate(-1deg)}
+.campaign-hero h1{font-size:clamp(2.1rem,4.6vw,3.8rem);line-height:.98;letter-spacing:-.045em;margin:.8rem 0 .75rem;color:#19224a;font-weight:1000}
+.campaign-hero p{font-size:1rem;line-height:1.5;max-width:35rem;margin:.6rem 0}
+.campaign-hero-art{min-height:0;background:#fff;display:flex;align-items:center;justify-content:center;border-left:3px solid #19224a;padding:.5rem;overflow:hidden}
+.campaign-hero-art img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain;object-position:center;display:block}
+.campaign-hero .campaign-date{font-weight:950;color:#19224a;background:#fff;padding:.65rem .8rem;border-radius:10px;display:inline-block;margin-top:.55rem}
+.campaign-notice{margin:1rem 0;padding:.75rem 1rem;border:2px dashed #e93470;background:#fff8fb;border-radius:12px;color:#4b2a65;line-height:1.45;font-size:.92rem}
+.campaign-section{margin:1.7rem 0}
+.campaign-section h2{font-size:clamp(1.55rem,2.7vw,2.15rem);letter-spacing:-.025em;margin:0 0 .4rem;color:#19224a;font-weight:950}
+.campaign-lead{font-size:1rem;line-height:1.55;max-width:800px;color:#4d5670;margin:.35rem 0}
+.campaign-reasons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin-top:.85rem}
+.campaign-reason{background:#fff;border:2px solid #19224a;border-radius:14px;padding:.85rem;box-shadow:3px 4px 0 #18b9b1}
+.campaign-reason .emoji{font-size:1.6rem}
+.campaign-reason h3{font-size:.98rem;line-height:1.15;margin:.4rem 0;color:#e93470;font-weight:900}
+.campaign-reason p{margin:0;color:#4d5670;line-height:1.4;font-size:.88rem}
+.campaign-donations{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7rem;margin-top:.9rem}
+.campaign-donation{background:#fff;border:2px solid #19224a;border-radius:15px;padding:1rem;box-shadow:3px 4px 0 #ffcf35}
+a.campaign-donation{display:block;color:inherit;text-decoration:none;transition:transform .18s,box-shadow .18s}
+a.campaign-donation:hover,a.campaign-donation:focus-visible{transform:translateY(-3px);box-shadow:4px 7px 0 #18b9b1;outline:3px solid #18b9b1;outline-offset:2px}
+.campaign-donation-free{background:#fff8df;border-style:dashed}
+.campaign-donation .amount{font-size:2rem;font-weight:1000;color:#e93470;line-height:1}
+.campaign-donation h3{font-size:.94rem;line-height:1.25;min-height:2.3rem;margin:.55rem 0;font-weight:850}
+.campaign-donation .after-tax{border-top:2px solid #e9eaf0;padding-top:.55rem;margin-top:.55rem;color:#555d75;font-size:.78rem;line-height:1.35}
+.campaign-donation .after-tax strong{display:block;font-size:1.4rem;color:#087d69;margin-top:.12rem;font-weight:1000}
+.campaign-tax-note{font-size:.82rem;color:#656b7c;line-height:1.45;margin-top:.75rem}
+.campaign-total{display:flex;gap:1rem;align-items:center;justify-content:space-between;background:#16b8b0;border:2px solid #19224a;border-radius:16px;padding:1rem 1.2rem;margin-top:1rem;color:#19224a}
+.campaign-total strong{font-size:1.75rem;color:#19224a}
+.campaign-draft-button{display:inline-flex;align-items:center;justify-content:center;border:2px solid #19224a;border-radius:999px;padding:.8rem 1.1rem;background:#19224a;color:#fff;font-weight:900;max-width:100%;text-align:center;font-size:.9rem}
+.campaign-footer-cta{text-align:center;padding:1.4rem 1rem;background:#e93470;border:2px solid #19224a;border-radius:20px;box-shadow:4px 5px 0 #ffcf35}
+.campaign-footer-cta h2{color:#fff}.campaign-footer-cta p{max-width:700px;margin:.5rem auto .9rem;line-height:1.5;color:#fff}
+.campaign-footer-cta .campaign-draft-button{background:#ffcf35;color:#19224a}
+@media(max-width:850px){.campaign-hero{grid-template-columns:1fr}.campaign-hero-art{border-left:0;border-top:3px solid #19224a;padding:.35rem}.campaign-hero-art img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain}.campaign-reasons{grid-template-columns:repeat(2,minmax(0,1fr))}.campaign-donations{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.campaign-draft{padding:0 .75rem}.campaign-status{font-size:.68rem;line-height:1.35;align-items:flex-start}.campaign-reasons,.campaign-donations{grid-template-columns:1fr}.campaign-total{align-items:flex-start;flex-direction:column}.campaign-hero h1{font-size:2.45rem}.campaign-donation h3{min-height:0}.campaign-reason{padding:.8rem}}
+
+.campaign-programme{margin:1.25rem 0 0;padding:1.15rem;background:#fff8df;border:2px solid #19224a;border-radius:16px;box-shadow:4px 5px 0 #e93470}
+.campaign-programme-head{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-bottom:.35rem}
+.campaign-programme-tag{display:inline-block;background:#e93470;color:#fff;border-radius:999px;padding:.3rem .65rem;font-size:.72rem;font-weight:950;letter-spacing:.06em;text-transform:uppercase}
+.campaign-programme h2{margin:0;color:#19224a;font-size:clamp(1.35rem,2.4vw,1.8rem)}
+.campaign-programme-intro{margin:.4rem 0 .8rem;color:#4d5670;line-height:1.45}
+.campaign-programme-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem}
+.campaign-programme-slot{background:#fff;border:1.5px dashed #18a69f;border-radius:12px;padding:.75rem}
+.campaign-programme-slot strong{display:block;color:#e93470;font-size:.92rem;margin-bottom:.25rem}
+.campaign-programme-slot span{color:#626a7e;font-size:.84rem;line-height:1.35}
+@media(max-width:650px){.campaign-programme-slots{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body data-fab-page="campagne-2027">
+<header>
+<div class="logo">
+<a aria-label="La Fabrique de Léon — Accueil" class="logo-main" href="index.html#accueil"><img alt="La Fabrique de Léon" src="assets/logo-fabrique-cover.webp"/><span class="logo-text">La Fabrique <span>de Léon</span><small class="brand-tagline">CULTURE · MUSIQUE · SPECTACLES VIVANTS</small></span></a>
+<span class="brand-socials"><a aria-label="Instagram de La Fabrique de Léon" class="brand-social instagram" href="https://www.instagram.com/lafabriquedeleon/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="17.6" rx="5" stroke="currentColor" stroke-width="2.2" width="17.6" x="3.2" y="3.2"></rect><circle cx="12" cy="12" fill="none" r="4.1" stroke="currentColor" stroke-width="2.2"></circle><circle cx="17.7" cy="6.5" fill="currentColor" r="1.25"></circle></svg></a><a aria-label="Facebook de La Fabrique de Léon" class="brand-social facebook" href="https://www.facebook.com/fabrique.leon" rel="noopener noreferrer" target="_blank" title="Facebook"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.7 21v-8.2h2.8l.42-3.2H13.7V7.55c0-.93.26-1.56 1.6-1.56h1.72V3.12A22.2 22.2 0 0 0 14.5 3c-2.5 0-4.2 1.52-4.2 4.32V9.6H7.5v3.2h2.8V21z" fill="currentColor"></path></svg></a></span>
+</div>
+<button aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale" id="menu" type="button">☰</button>
+<nav id="navigation-principale" aria-label="Navigation principale">
+<a href="index.html#accueil">Accueil</a>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Découvrir <span>⌄</span></button><div class="nav-dropdown"><a href="association.html">L’association</a><a href="edition-2027.html">Léon en Rue Libre</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Les éditions <span>⌄</span></button><div class="nav-dropdown"><a href="editions.html">Toutes les affiches</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Souvenirs <span>⌄</span></button><div class="nav-dropdown"><a href="souvenirs.html">Photos par année</a><a href="partager-souvenirs.html#partage-formulaire">Partagez vos souvenirs</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Participer <span>⌄</span></button><div class="nav-dropdown"><a href="benevoles.html">Devenir bénévole</a><a href="adhesion.html">Adhérer</a><a href="campagne-2027.html">Collecte 2027</a><a href="soutenir.html#dons">Faire un don</a><a href="artistes.html">Artistes</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Infos pratiques <span>⌄</span></button><div class="nav-dropdown"><a href="contact.html">Nous contacter</a><a href="partenaires.html">Partenaires</a><a href="mentions-legales.html#infos-legales">Informations légales</a></div></div>
+<a class="nav-member" href="espace-membre.html">Espace membre 🔒</a>
+<a class="header-don" href="soutenir.html#dons">♥ DON</a>
+</nav>
+</header>
+<main id="accueil">
+<section id="campaign-preview" class="campaign-draft">
+
+<div class="campaign-hero">
+ <div class="campaign-hero-copy">
+  <div class="campaign-kicker">Fais du bruit pour la culture !</div>
+  <h1>Soutenons<br/>Léon en Rue Libre<br/>2027&nbsp;!</h1>
+  <p><strong>Un village, des artistes, une grande fête gratuite !</strong><br>Ton soutien aide à faire vibrer Léon le 19 août 2027.</p>
+  <p class="campaign-date">📅 Rendez-vous le 19 août 2027 à Léon</p>
+ </div>
+ <div class="campaign-hero-art"><img src="assets/collecte-2027-photo-reelle-logo.webp" alt="Photographie réelle du public et de la scène du festival, avec le logo de La Fabrique de Léon"/></div>
+</div>
+<div class="campaign-notice" style="border-style:solid;border-color:#16a085;background:#effcf8;color:#174f45"><strong>La collecte 2027 est ouverte !</strong> La campagne officielle est publiée sur HelloAsso. Tu peux la consulter, la partager et participer en toute sécurité depuis la plateforme.</div>
+<section class="campaign-section">
+ <h2>Un festival, mille bonnes raisons !</h2>
+ <p class="campaign-lead">Depuis 2013, La Fabrique de Léon fait vivre les arts et la musique dans le village. Pour garder le festival <strong>gratuit et ouvert à tous</strong>, chaque coup de pouce compte !</p>
+ <div class="campaign-reasons">
+  <article class="campaign-reason"><div class="emoji" aria-hidden="true">🎤</div><h3>Accueillir les artistes</h3><p>Contribuer aux frais liés à leur venue et à leurs prestations.</p></article>
+  <article class="campaign-reason"><div class="emoji" aria-hidden="true">🎚️</div><h3>Sonorisation et éclairage</h3><p>Participer aux équipements techniques nécessaires aux spectacles.</p></article>
+  <article class="campaign-reason"><div class="emoji" aria-hidden="true">🎪</div><h3>Organiser le festival</h3><p>Financer une partie des installations et des besoins logistiques.</p></article>
+  <article class="campaign-reason"><div class="emoji" aria-hidden="true">🤝</div><h3>Un événement gratuit</h3><p>Aider à maintenir un rendez-vous culturel accessible au public.</p></article>
+ </div>
+</section>
+<section class="campaign-section" aria-labelledby="campaign-gifts-title">
+ <h2 id="campaign-gifts-title">Un petit don. Un grand effet !</h2>
+ <p class="campaign-lead">Choisis ton montant : voici son coût indicatif après réduction fiscale de 66 % pour un particulier éligible.</p>
+ <div class="campaign-donations">
+  <article class="campaign-donation"><div class="amount">20 €</div><h3>Un premier coup de pouce&nbsp;!</h3><div class="after-tax">Coût indicatif après réduction fiscale<strong>6,80 €</strong></div></article>
+  <article class="campaign-donation"><div class="amount">50 €</div><h3>Un soutien au Festival</h3><div class="after-tax">Coût indicatif après réduction fiscale<strong>17 €</strong></div></article>
+  <article class="campaign-donation"><div class="amount">100 €</div><h3>Un grand merci pour la Culture</h3><div class="after-tax">Coût indicatif après réduction fiscale<strong>34 €</strong></div></article>
+  <article class="campaign-donation"><div class="amount">200 €</div><h3>Un soutien majeur à Léon en Rue Libre</h3><div class="after-tax">Coût indicatif après réduction fiscale<strong>68 €</strong></div></article>
+  <a class="campaign-donation campaign-donation-free" href="https://www.helloasso.com/associations/la-fabrique-de-leon/collectes/soutenons-leon-en-rue-libre-2027" target="_blank" rel="noopener noreferrer" aria-label="Choisir un autre montant libre sur HelloAsso"><div class="amount">€…</div><h3>Un autre montant ?</h3><div class="after-tax">Montant libre<strong>À vous de choisir !</strong></div></a>
+ </div>
+ <p class="campaign-tax-note">Les coûts après réduction sont présentés à titre indicatif pour un particulier éligible à une réduction d’impôt de 66 %, dans les limites et conditions prévues par la loi. La situation fiscale de chaque donateur peut modifier l’avantage effectif. Les reçus fiscaux ne seront émis que si le don est éligible.</p>
+ <div class="campaign-total"><div><span class="campaign-kicker" style="color:#fff;background:#19224a">OBJECTIF À ATTEINDRE</span><br/><strong>5 000 €</strong><div>Pour préparer Léon en Rue Libre 2027</div></div><a class="campaign-draft-button" href="https://www.helloasso.com/associations/la-fabrique-de-leon/collectes/soutenons-leon-en-rue-libre-2027" target="_blank" rel="noopener noreferrer">Participer à la collecte ↗</a></div>
+
+<div class="campaign-programme" aria-labelledby="campaign-programme-title">
+ <div class="campaign-programme-head"><span class="campaign-programme-tag">Bientôt</span><h2 id="campaign-programme-title">La programmation 2027 se prépare !</h2></div>
+ <p class="campaign-programme-intro">Les artistes, concerts et spectacles de Léon en Rue Libre seront présentés ici au fur et à mesure de leur confirmation. Revenez découvrir les prochaines annonces !</p>
+ <div class="campaign-programme-slots">
+  <div class="campaign-programme-slot"><strong>🎵 Musique & concerts</strong><span>Les premiers artistes seront annoncés prochainement.</span></div>
+  <div class="campaign-programme-slot"><strong>🎭 Arts de rue & spectacles</strong><span>Les spectacles et compagnies seront dévoilés ici.</span></div>
+  <div class="campaign-programme-slot"><strong>🎉 Animations & surprises</strong><span>Les rendez-vous et animations complèteront bientôt le programme.</span></div>
+ </div>
+</div>
+</section>
+<section class="campaign-section campaign-footer-cta">
+ <h2>On se retrouve le 19 août ?</h2>
+ <p>Ensemble, faisons de Léon en Rue Libre 2027 une journée pleine de musique, de rencontres et de surprises — gratuite pour toutes et tous !</p>
+ <a class="campaign-draft-button" href="https://www.helloasso.com/associations/la-fabrique-de-leon/collectes/soutenons-leon-en-rue-libre-2027" target="_blank" rel="noopener noreferrer">Je soutiens Léon en Rue Libre 2027 ↗</a>
+</section>
+</section>
+</main>
+<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Campagne 2027 publiée sur HelloAsso · V27.81</p></footer>
+<script src="script.js"></script>
+</body></html>

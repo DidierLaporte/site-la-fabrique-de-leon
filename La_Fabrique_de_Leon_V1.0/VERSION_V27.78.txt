@@ -1,0 +1,7 @@
+La Fabrique de Léon — Site collaboratif
+Version V27.78
+
+Modifications :
+- Édition 2019 : retrait du lien de recherche associé à PIVA ; le nom reste affiché en texte simple.
+- Édition 2017 : retrait des liens du site historique et de l’archive de concert de WANAGROOVE ; le nom reste affiché en texte simple.
+- Les autres liens et contenus de V27.77 sont conservés.

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Vos souvenirs — Souvenirs en images | La Fabrique de Léon</title>
+<meta name="description" content="Retrouvez les photos des éditions de La Fabrique de Léon, année par année."/>
+<meta content="Le portail de La Fabrique de Léon : éditions, artistes, souvenirs, actualités et vie associative." name="description"/>
+<link href="style.css" rel="stylesheet"/>
+<style>html{scroll-behavior:smooth;scroll-padding-top:92px}.shortcut-card{display:block;cursor:pointer}.shortcut-card:focus-visible{outline:4px solid #f4cf38;outline-offset:4px}.section[id],.memory-share-panel[id]{scroll-margin-top:92px}</style>
+<style id="fabrique-page-routing">
+/* V27.10 : accueil-portail et pages dédiées, contenus d'origine conservés */
+body[data-fab-page="home"] main > section:not(.home-shortcuts):not(.hero) { display:none !important; }
+body[data-fab-page="home"] .home-shortcuts { display:block !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main > section,
+body[data-fab-page]:not([data-fab-page="home"]) main > div.section { display:none !important; }
+body[data-fab-page]:not([data-fab-page="home"]) .home-shortcuts { display:none !important; }
+body[data-fab-page="association"] #association,
+body[data-fab-page="edition-2027"] #rue-libre,
+body[data-fab-page="editions"] #historique,
+body[data-fab-page="souvenirs"] #souvenirs-annees,
+body[data-fab-page="souvenirs"] #archives,
+body[data-fab-page="soutenir"] #dons,
+body[data-fab-page="soutenir"] #adhesion,
+body[data-fab-page="partenaires"] #partenaires,
+body[data-fab-page="contact"] #contact,
+body[data-fab-page="espace-membre"] #espace-membre,
+body[data-fab-page="mentions-legales"] #infos-legales,
+body[data-fab-page="benevoles"] #benevoles { display:block !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main > .hero,
+body[data-fab-page]:not([data-fab-page="home"]) main > .home-hero { display:none !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main { padding-top: 1.5rem; }
+@media (max-width: 700px) {
+  .shortcuts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .shortcut-card { min-height: 190px; }
+}
+@media (max-width: 520px) { .shortcuts-grid { grid-template-columns: minmax(0, 1fr) !important; } .shortcut-card { min-height: 0 !important; } }
+
+body[data-fab-page="souvenirs"] #archives { display:none !important; }
+body[data-fab-page="souvenirs-partage"] #souvenirs-annees { display:none !important; }
+body[data-fab-page="souvenirs-partage"] #archives { display:block !important; }
+</style>
+
+<style id="souvenirs-lightbox-v27-75">
+.memory-year-photos img{cursor:zoom-in}
+.memory-year-photos img:focus-visible{outline:4px solid #18b9b1;outline-offset:3px}
+#photo-lightbox{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;padding:3vh 3vw;background:rgba(5,10,18,.94)}
+#photo-lightbox.is-open{display:flex}
+#photo-lightbox .lightbox-image{display:block;max-width:92vw;max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:8px;box-shadow:0 12px 50px rgba(0,0,0,.5)}
+#photo-lightbox .lightbox-close{position:absolute;top:16px;right:20px;width:48px;height:48px;border:2px solid #fff;border-radius:50%;background:#19224a;color:#fff;font-size:30px;line-height:1;cursor:pointer;z-index:2}
+#photo-lightbox .lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:64px;border:1px solid rgba(255,255,255,.75);border-radius:14px;background:rgba(25,34,74,.88);color:#fff;font-size:38px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+#photo-lightbox .lightbox-prev{left:18px}#photo-lightbox .lightbox-next{right:18px}
+#photo-lightbox .lightbox-nav:disabled{opacity:.28;cursor:default}
+#photo-lightbox .lightbox-nav:focus-visible,#photo-lightbox .lightbox-close:focus-visible{outline:3px solid #18b9b1;outline-offset:3px}
+#photo-lightbox .lightbox-caption{position:absolute;left:12vw;right:12vw;bottom:12px;color:#fff;text-align:center;font-size:.95rem;line-height:1.4}
+#photo-lightbox .lightbox-count{display:block;color:#b9d9e4;font-size:.82rem;margin-top:3px}
+body.lightbox-open{overflow:hidden}
+@media(max-width:600px){#photo-lightbox{padding:2vh 2vw}#photo-lightbox .lightbox-image{max-width:96vw;max-height:78vh}#photo-lightbox .lightbox-close{top:9px;right:9px;width:44px;height:44px}#photo-lightbox .lightbox-nav{width:42px;height:52px;font-size:30px;border-radius:11px;background:rgba(25,34,74,.78)}#photo-lightbox .lightbox-prev{left:7px}#photo-lightbox .lightbox-next{right:7px}#photo-lightbox .lightbox-caption{left:14vw;right:14vw;bottom:8px;font-size:.84rem}}
+@media(max-width:380px){#photo-lightbox .lightbox-nav{width:36px;height:46px}#photo-lightbox .lightbox-prev{left:4px}#photo-lightbox .lightbox-next{right:4px}}
+</style>
+
+<style id="souvenirs-archive-layout-v27-86">
+/* V27.86 — archives en pleine largeur, séparées des trois éditions récentes */
+.memory-year-grid.memory-year-featured{grid-template-columns:repeat(3,minmax(0,1fr)) !important}
+.memory-archive-section{margin:34px 0 12px;padding:clamp(20px,3vw,34px);border:1px solid #dce8e2;border-radius:22px;background:linear-gradient(135deg,#fffefa 0%,#f1f7f4 100%);box-shadow:0 10px 28px rgba(24,45,55,.06)}
+.memory-archive-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:22px}
+.memory-archive-heading h2{margin:4px 0 7px;color:#1c3545;font-family:'DM Sans',Arial,sans-serif;font-size:clamp(1.5rem,3vw,2.15rem);font-weight:850}
+.memory-archive-heading p{margin:0;color:#506579;line-height:1.55}
+.memory-archive-share{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border:1px solid #cbded5;border-radius:999px;background:#fff;color:#14786f;font-weight:800;text-decoration:none;white-space:nowrap}
+.memory-archive-years{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:11px}
+.memory-archive-year{min-width:0;background:#fff;border:1px solid #d8e5de;border-radius:13px;overflow:hidden;box-shadow:0 2px 8px rgba(20,50,45,.035)}
+.memory-archive-year>summary{min-height:64px;list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:7px;padding:12px 13px;color:#1c3545;font-weight:850;transition:background .18s,border-color .18s}
+.memory-archive-year>summary::-webkit-details-marker{display:none}
+.memory-archive-year>summary:after{content:'+';flex:0 0 auto;width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#edf5f1;color:#14786f;font-size:1.15rem;font-weight:700}
+.memory-archive-year[open]>summary:after{content:'−'}
+.memory-archive-year>summary:focus-visible{outline:3px solid #16877f;outline-offset:-3px}
+.memory-archive-year>summary span{font-size:1.25rem;letter-spacing:.01em}
+.memory-archive-year>summary small{font-size:.72rem;color:#60766f;font-weight:700;text-align:right}
+.memory-archive-year[open]{grid-column:1/-1;border-color:#a9cfc0;box-shadow:0 5px 18px rgba(20,80,65,.08)}
+.memory-archive-year[open]>summary{background:#edf6f1}
+.memory-archive-year .memory-year-photos{padding:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.memory-archive-year .memory-year-photos img{height:190px}
+.memory-archive-year .memory-year-empty-content{padding:4px 15px 16px;font-size:.92rem}
+@media(max-width:900px){.memory-archive-years{grid-template-columns:repeat(4,minmax(0,1fr))}.memory-archive-heading{align-items:flex-start;flex-direction:column}.memory-archive-share{white-space:normal}}
+@media(max-width:600px){.memory-year-grid.memory-year-featured{grid-template-columns:1fr !important}.memory-archive-section{margin-top:26px;padding:17px;border-radius:17px}.memory-archive-years{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.memory-archive-year>summary{min-height:58px;padding:10px}.memory-archive-year>summary span{font-size:1.12rem}.memory-archive-year>summary small{font-size:.67rem}.memory-archive-year .memory-year-photos{grid-template-columns:repeat(2,minmax(0,1fr))}.memory-archive-year .memory-year-photos img{height:125px}}
+</style>
+
+</head>
+<body data-fab-page="souvenirs">
+<header>
+<div class="logo">
+<a aria-label="La Fabrique de Léon — Accueil" class="logo-main" href="index.html#accueil"><img alt="La Fabrique de Léon" src="assets/logo-fabrique-cover.webp"/><span class="logo-text">La Fabrique <span>de Léon</span><small class="brand-tagline">CULTURE · MUSIQUE · SPECTACLES VIVANTS</small></span></a>
+<span class="brand-socials"><a aria-label="Instagram de La Fabrique de Léon" class="brand-social instagram" href="https://www.instagram.com/lafabriquedeleon/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="17.6" rx="5" stroke="currentColor" stroke-width="2.2" width="17.6" x="3.2" y="3.2"></rect><circle cx="12" cy="12" fill="none" r="4.1" stroke="currentColor" stroke-width="2.2"></circle><circle cx="17.7" cy="6.5" fill="currentColor" r="1.25"></circle></svg></a><a aria-label="Facebook de La Fabrique de Léon" class="brand-social facebook" href="https://www.facebook.com/fabrique.leon" rel="noopener noreferrer" target="_blank" title="Facebook"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.7 21v-8.2h2.8l.42-3.2H13.7V7.55c0-.93.26-1.56 1.6-1.56h1.72V3.12A22.2 22.2 0 0 0 14.5 3c-2.5 0-4.2 1.52-4.2 4.32V9.6H7.5v3.2h2.8V21z" fill="currentColor"></path></svg></a></span>
+</div>
+<button aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale" id="menu" type="button">☰</button>
+<nav id="navigation-principale" aria-label="Navigation principale">
+<a href="index.html#accueil">Accueil</a>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Découvrir <span>⌄</span></button><div class="nav-dropdown"><a href="association.html">L’association</a><a href="edition-2027.html">Léon en Rue Libre</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Les éditions <span>⌄</span></button><div class="nav-dropdown"><a href="editions.html">Toutes les affiches</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Souvenirs <span>⌄</span></button><div class="nav-dropdown"><a href="souvenirs.html">Photos par année</a><a href="partager-souvenirs.html#partage-formulaire">Partagez vos souvenirs</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Participer <span>⌄</span></button><div class="nav-dropdown"><a href="benevoles.html">Devenir bénévole</a><a href="adhesion.html">Adhérer</a><a href="campagne-2027.html">Soutenir Léon en Rue Libre 2027 (projet)</a><a href="soutenir.html#dons">Faire un don</a><a href="artistes.html">Artistes</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Infos pratiques <span>⌄</span></button><div class="nav-dropdown"><a href="contact.html">Nous contacter</a><a href="partenaires.html">Partenaires</a><a href="mentions-legales.html#infos-legales">Informations légales</a></div></div>
+<a class="nav-member" href="espace-membre.html">Espace membre 🔒</a>
+<a class="header-don" href="soutenir.html#dons">♥ DON</a>
+</nav>
+</header>
+<main id="accueil">
+<section class="section memories-by-year memories-unified" id="souvenirs-annees">
+<div class="eyebrow">VOS SOUVENIRS</div>
+<h1>Souvenirs en images</h1>
+<p class="lead">Choisissez une année pour découvrir les photos, les concerts et les moments de convivialité de La Fabrique.</p>
+<style id="souvenirs-video-v27-79">
+.memory-video-feature{max-width:900px;margin:26px auto 34px;padding:clamp(18px,3vw,30px);border:1px solid #dce8e3;border-radius:22px;background:linear-gradient(135deg,#fffdf8 0%,#eef8f5 100%);box-shadow:0 12px 34px rgba(24,45,55,.08)}
+.memory-video-feature .video-kicker{margin:0 0 7px;color:#16877f;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.memory-video-feature h2{margin:0 0 9px;font-family:'DM Sans',Arial,sans-serif;font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.15;color:#192b45}
+.memory-video-feature .video-intro{max-width:720px;margin:0 0 18px;color:#506579}
+.memory-video-frame{overflow:hidden;border-radius:15px;background:#101820;box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.memory-video-frame{max-width:760px;margin:0 auto}.memory-video-frame video{display:block;width:100%;height:auto;max-height:min(42vw,420px);object-fit:contain;background:#101820}
+.memory-video-caption{margin:12px 2px 0;color:#607184;font-size:.9rem}
+@media(max-width:600px){.memory-video-feature{margin:20px 0 26px;padding:15px;border-radius:16px}.memory-video-frame{border-radius:10px}.memory-video-frame video{max-height:56vw}.memory-video-caption{font-size:.82rem}}
+</style>
+<section class="memory-video-feature" aria-labelledby="memory-video-title">
+  <p class="video-kicker">La Fabrique en mouvement · 2026</p>
+  <h2 id="memory-video-title">Revivez les beaux moments de l’édition 2026</h2>
+  <p class="video-intro">Concerts, artistes, public et convivialité : retrouvez l’ambiance de La Fabrique de Léon en vidéo.</p>
+  <div class="memory-video-frame">
+    <video controls playsinline preload="metadata" poster="assets/photos/2026-ambiance.webp" aria-label="Vidéo souvenirs de La Fabrique de Léon, édition 2026">
+      <source src="assets/video-souvenirs-2026.mp4" type="video/mp4"/>
+      Votre navigateur ne peut pas lire cette vidéo. Vous pouvez essayer avec un navigateur récent.
+    </video>
+  </div>
+  <p class="memory-video-caption">Vidéo souvenir de l’édition 2026 · Lecture au choix, avec commandes et son.</p>
+</section>
+
+<style id="souvenirs-all-years-v27-83">
+.memory-year-placeholder{height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#e8eee9,#dce8e3);color:#23433f;text-align:center}
+.memory-year-placeholder span{font-family:'DM Sans',Arial,sans-serif;font-size:2.5rem;font-weight:900;letter-spacing:.04em}
+.memory-year-placeholder small{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#60766f}
+.memory-year-empty-content{padding:12px 14px 16px;color:#506579;font-size:.9rem}
+.memory-year-empty-content p{margin:0 0 8px}
+.memory-year-empty-content a{color:#14786f;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.memory-year-card>summary:focus-visible{outline:3px solid #16877f;outline-offset:3px}
+@media(max-width:650px){.memory-year-placeholder{height:135px}.memory-year-placeholder span{font-size:2rem}.memory-year-empty-content{font-size:.86rem;padding:10px}}
+/* V27.85 — trois éditions récentes en pavés + un pavé d'archives consultables année par année */
+.memory-archive-cover{height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;background:radial-gradient(circle at 20% 20%,#f5d88b 0,#e9bd67 26%,#244d58 27%,#173c4a 100%);color:#fff;text-align:center}
+.memory-archive-cover span{font-family:'DM Sans',Arial,sans-serif;font-size:2.25rem;font-weight:900;letter-spacing:.02em}
+.memory-archive-cover small{font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#f7ead0}
+.memory-archive-cover b{font-size:1.7rem;line-height:1;margin-top:2px}
+.memory-archive-panel{padding:14px;background:#f8faf8;border-top:1px solid #e1e9e4}
+.memory-archive-intro{margin:0 0 12px;color:#506579;font-size:.9rem;line-height:1.5}
+.memory-archive-years{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.memory-archive-year{min-width:0;background:#fff;border:1px solid #dce7e1;border-radius:10px;overflow:hidden}
+.memory-archive-year>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 12px;color:#1c3545;font-weight:850}
+.memory-archive-year>summary::-webkit-details-marker{display:none}
+.memory-archive-year>summary:focus-visible{outline:3px solid #16877f;outline-offset:-3px}
+.memory-archive-year>summary small{font-size:.72rem;color:#60766f;font-weight:700;text-align:right}
+.memory-archive-year[open]>summary{background:#edf6f1}
+.memory-archive-year .memory-year-photos{padding:7px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.memory-archive-year .memory-year-photos img{height:105px}
+.memory-archive-year .memory-year-empty-content{padding:4px 12px 12px;font-size:.82rem}
+@media(max-width:650px){.memory-archive-cover{height:135px}.memory-archive-cover span{font-size:1.8rem}.memory-archive-panel{padding:10px}.memory-archive-years{grid-template-columns:minmax(0,1fr);gap:7px}.memory-archive-year>summary{min-height:44px}.memory-archive-year .memory-year-photos img{height:100px}}
+</style>
+<div class="memory-year-grid memory-year-featured" aria-label="Les trois dernières éditions et les archives anciennes">
+<details class="memory-year-card"><summary><img alt="Souvenirs photographiques 2026" loading="lazy" src="assets/photos/2026-ambiance.webp"/><span>2026 <small>Voir les photos ↓</small></span></summary><div class="memory-year-photos" aria-label="Photos de 2026">
+<img alt="Concert 2026" loading="lazy" src="assets/photos/2026-ambiance.webp"/>
+<img alt="CHELABÔM" loading="lazy" src="assets/photos/CHELABOM42.webp"/>
+<img alt="Public et concert" loading="lazy" src="assets/photos/concert3.webp"/>
+</div></details>
+<details class="memory-year-card"><summary><img alt="Souvenirs photographiques 2025 — Soul Phoenixs sur scène" loading="lazy" src="assets/photos/SoulPhoenixs-23.webp"/><span>2025 <small>Voir les 9 photos ↓</small></span></summary><div class="memory-year-photos" aria-label="Photos de l’édition 2025">
+<img alt="Soul Phoenixs en concert, scène et lumières" loading="lazy" src="assets/photos/SoulPhoenixs-23.webp"/>
+<img alt="Soul Phoenixs sur scène" loading="lazy" src="assets/photos/SoulPhoenixs-15.webp"/>
+<img alt="Soul Phoenixs, chanteuse et musiciens" loading="lazy" src="assets/photos/SoulPhoenixs-5.webp"/>
+<img alt="Nicolas Woilet Trio en concert" loading="lazy" src="assets/photos/NicolasWoiletTrio-6.webp"/>
+<img alt="Nicolas Woilet Trio sur scène" loading="lazy" src="assets/photos/NicolasWoiletTrio-5.webp"/>
+<img alt="M Moustache en spectacle" loading="lazy" src="assets/photos/MMoustache-7.webp"/>
+<img alt="M Moustache, moment de spectacle" loading="lazy" src="assets/photos/MMoustache-2.webp"/>
+<img alt="chOse en concert" loading="lazy" src="assets/photos/chOse-6.webp"/>
+<img alt="chOse sur scène" loading="lazy" src="assets/photos/chOse-3.webp"/>
+</div></details>
+<details class="memory-year-card"><summary><img alt="Souvenirs photographiques 2024" loading="lazy" src="assets/photos/2024-114.webp"/><span>2024 <small>Voir les photos ↓</small></span></summary><div class="memory-year-photos" aria-label="Photos de 2024">
+<img alt="Artistes sur scène" loading="lazy" src="assets/photos/2024-114.webp"/>
+<img alt="Public 2024" loading="lazy" src="assets/photos/2024-100.webp"/>
+</div></details>
+
+</div>
+<details class="memory-archive-disclosure">
+  <summary><span><strong>Les éditions précédentes</strong><small>Retrouvez les archives de 2013 à 2023</small></span><b aria-hidden="true">⌄</b></summary>
+  <section class="memory-archive-section" aria-labelledby="memory-archive-title">
+  <div class="memory-archive-heading">
+    <div><div class="eyebrow">UN PEU DE NOSTALGIE</div><h2 id="memory-archive-title">Les éditions précédentes</h2>
+    <p>Ouvrez une année pour retrouver les photos disponibles et contribuer à compléter nos souvenirs.</p></div>
+    <a class="memory-archive-share" href="partager-souvenirs.html#partage-formulaire">Vous avez des photos ? Partagez-les →</a>
+  </div>
+  <div class="memory-archive-years" aria-label="Choisir une année des archives anciennes">
+
+<details class="memory-archive-year memory-archive-empty"><summary><span>2023</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2023 →</a></div></details>
+
+
+<details class="memory-archive-year"><summary><span>2022</span><small>Voir 2 photos ↓</small></summary><div class="memory-year-photos" aria-label="Photos de 2022"><img alt="Public 2022" loading="lazy" src="assets/photos/2022-3.jpg"/><img alt="Concert 2022" loading="lazy" src="assets/photos/2022-4.jpg"/></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2021</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2021 →</a></div></details>
+<details class="memory-archive-year"><summary><span>2020</span><small>Voir 2 photos ↓</small></summary><div class="memory-year-photos" aria-label="Photos de 2020"><img alt="Photo d’archives 2020" loading="lazy" src="assets/photos/2020-1.jpg"/><img alt="Photo d’archives 2020" loading="lazy" src="assets/photos/2020-3.jpg"/></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2019</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2019 →</a></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2018</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2018 →</a></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2017</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2017 →</a></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2016</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2016 →</a></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2015</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2015 →</a></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2014</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2014 →</a></div></details>
+<details class="memory-archive-year memory-archive-empty"><summary><span>2013</span><small>Photos à ajouter</small></summary><div class="memory-year-empty-content"><p>Les photos de cette édition ne sont pas encore disponibles en ligne.</p><a href="partager-souvenirs.html#partage-formulaire">Partager des photos de 2013 →</a></div></details>
+
+  </div>
+  </section>
+</details>
+<details class="memory-volunteers-disclosure">
+  <summary><span><strong>Nos bénévoles</strong><small>Les visages et les sourires de celles et ceux qui font vivre La Fabrique</small></span><b aria-hidden="true">⌄</b></summary>
+  <div class="memory-volunteers-panel">
+<section class="memory-volunteers" aria-labelledby="memory-volunteers-title">
+  <div class="memory-volunteers-copy">
+    <div class="eyebrow">DERRIÈRE LA FÊTE</div>
+    <h2 id="memory-volunteers-title">Nos bénévoles</h2>
+    <p>Des visages, des sourires et de beaux souvenirs : retrouvez celles et ceux qui ont donné de leur temps et de leur énergie pour faire vivre La Fabrique de Léon.</p>
+  </div>
+  <div class="memory-volunteers-gallery" aria-label="Album photos des bénévoles et de l’ambiance du festival">
+    <p class="memory-volunteers-intro">Un album consacré à la vie collective du festival : décorations, accueil du public, repas, moments partagés et coulisses de l’organisation. Ces images restent dans l’espace souvenirs bénévoles, séparément des albums consacrés aux artistes et aux groupes.</p>
+    <div class="memory-year-photos">
+      <figure class="memory-volunteers-photo">
+        <img src="assets/photos/benevoles-fabrique-groupe.webp" alt="L’équipe des bénévoles de La Fabrique de Léon réunie dans la bonne humeur" loading="lazy" />
+        <figcaption>L’équipe de La Fabrique de Léon</figcaption>
+      </figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-01.webp" alt="Vue d’ensemble de la place du festival sous les platanes, avec le public et les installations" loading="lazy"/><figcaption>La place du festival sous les platanes</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-02.webp" alt="Décorations de tissus colorés et anciennes lampes suspendues dans les arbres" loading="lazy"/><figcaption>Les décorations et les lampes suspendues</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-03.webp" alt="Les visiteurs se retrouvent sous les platanes dans l’espace du festival" loading="lazy"/><figcaption>Les retrouvailles et les échanges</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-04.webp" alt="Repas partagé autour des grandes tables dans le village" loading="lazy"/><figcaption>Le repas partagé</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-05.webp" alt="Familles et visiteurs profitent de l’ambiance du festival" loading="lazy"/><figcaption>Les familles et le public réunis</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-06.webp" alt="Le public se rassemble sous les arbres décorés" loading="lazy"/><figcaption>Un moment de convivialité sous les platanes</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-07.webp" alt="Des spectateurs regardent le spectacle depuis le public" loading="lazy"/><figcaption>Le public réuni devant la scène</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-08.webp" alt="Détail des fanions colorés avec la scène et le spectacle en arrière-plan flou" loading="lazy"/><figcaption>Les fanions colorés et les lumières</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-09.webp" alt="Ambiance nocturne du festival avec les visiteurs sous les guirlandes lumineuses" loading="lazy"/><figcaption>La convivialité à la tombée de la nuit</figcaption></figure>
+      <figure class="memory-volunteers-photo"><img src="assets/photos/souvenirs-benevoles-2026-10.webp" alt="Installation technique et préparation de l’espace scénique par l’équipe" loading="lazy"/><figcaption>Les coulisses et la préparation technique</figcaption></figure>
+    </div>
+    <p class="memory-volunteers-more">Cet album rassemble les souvenirs collectifs et les coulisses bénévoles. Il est distinct des galeries d’artistes.</p>
+    <a class="memory-volunteers-add" href="partager-souvenirs.html#partage-formulaire">＋ Proposer des photos pour l’album bénévoles</a>
+  </div>
+</section>
+<style id="souvenirs-v27-87-layout">
+.memory-volunteers{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,1.05fr);gap:24px 34px;align-items:center;margin:34px 0;padding:clamp(20px,3vw,32px);border:1px solid #dce8e3;border-radius:22px;background:linear-gradient(120deg,#fffdf8,#eef7f3);box-shadow:0 8px 26px rgba(24,45,55,.06)}
+.memory-volunteers-copy h2{margin:5px 0 10px;color:#1c3545;font-family:'DM Sans',Arial,sans-serif;font-size:clamp(1.6rem,3vw,2.15rem);font-weight:850}
+.memory-volunteers-copy p{max-width:520px;margin:0 0 16px;color:#506579;line-height:1.65}
+.memory-volunteers-gallery{grid-column:1/-1;min-width:0}.memory-volunteers-gallery .memory-year-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;padding:0}.memory-volunteers-photo{margin:0;min-width:0}.memory-volunteers-photo img{display:block;width:100%;height:220px;object-fit:cover;object-position:center 42%;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.10);cursor:zoom-in}.memory-volunteers-photo figcaption{margin:8px 3px 0;color:#607184;font-size:.85rem}.memory-volunteers-more{margin:14px 0 12px;padding-top:12px;border-top:1px solid #dce8e3;color:#607184;font-size:.9rem}.memory-volunteers-add{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:1px solid #cbded5;border-radius:999px;background:#fff;color:#14786f;font-weight:800;text-decoration:none}.memory-volunteers-add:hover{background:#edf6f1}.memory-archive-disclosure{margin:34px 0 12px;border:1px solid #d7e5de;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(24,45,55,.055)}
+.memory-archive-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:18px;list-style:none;cursor:pointer;padding:22px 26px;background:linear-gradient(110deg,#f8fbf8,#edf6f1);color:#1c3545}
+.memory-archive-disclosure>summary::-webkit-details-marker{display:none}.memory-archive-disclosure>summary strong{display:block;font-family:'DM Sans',Arial,sans-serif;font-size:clamp(1.25rem,2.5vw,1.75rem);font-weight:850}.memory-archive-disclosure>summary small{display:block;margin-top:5px;color:#60766f;font-size:.9rem;font-weight:600}
+.memory-archive-disclosure>summary b{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid #d5e4dc;color:#14786f;font-size:1.5rem;transition:transform .2s}
+.memory-archive-disclosure[open]>summary b{transform:rotate(180deg)}.memory-archive-disclosure>summary:focus-visible{outline:3px solid #16877f;outline-offset:-3px}
+.memory-archive-disclosure .memory-archive-section{margin:0;padding:24px;border:0;border-top:1px solid #e1e9e4;border-radius:0;box-shadow:none}
+@media(max-width:650px){.memory-volunteers{grid-template-columns:1fr;gap:16px;margin:26px 0;padding:17px;border-radius:17px}.memory-volunteers-gallery .memory-year-photos{grid-template-columns:1fr}.memory-volunteers-photo img{height:210px}.memory-volunteers-add{width:100%;box-sizing:border-box}.memory-archive-disclosure{margin:26px 0 10px;border-radius:16px}.memory-archive-disclosure>summary{padding:17px}.memory-archive-disclosure>summary b{flex-basis:36px;width:36px;height:36px}.memory-archive-disclosure .memory-archive-section{padding:16px}}
+</style>
+  </div>
+</details>
+
+<style id="souvenirs-v27-92-volunteer-gallery">
+.memory-volunteers-intro{grid-column:1/-1;margin:0 0 14px;color:#506579;line-height:1.65}.memory-volunteers-gallery .memory-year-photos{grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));align-items:start}.memory-volunteers-photo img{height:205px;object-fit:cover}.memory-volunteers-photo figcaption{line-height:1.4;min-height:2.4em}
+@media(max-width:650px){.memory-volunteers-gallery .memory-year-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.memory-volunteers-photo img{height:145px}.memory-volunteers-photo figcaption{font-size:.78rem;min-height:0}.memory-volunteers-intro{font-size:.93rem}}
+@media(max-width:390px){.memory-volunteers-gallery .memory-year-photos{grid-template-columns:1fr}.memory-volunteers-photo img{height:210px}}
+</style>
+<style id="souvenirs-v27-90-independent-panels">
+.memory-volunteers-disclosure{margin:18px 0 12px;border:1px solid #d7e5de;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(24,45,55,.055)}
+.memory-volunteers-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:18px;list-style:none;cursor:pointer;padding:22px 26px;background:linear-gradient(110deg,#fffdf8,#f2f7f3);color:#1c3545}
+.memory-volunteers-disclosure>summary::-webkit-details-marker{display:none}.memory-volunteers-disclosure>summary strong{display:block;font-family:'DM Sans',Arial,sans-serif;font-size:clamp(1.25rem,2.5vw,1.75rem);font-weight:850}.memory-volunteers-disclosure>summary small{display:block;margin-top:5px;color:#60766f;font-size:.9rem;font-weight:600}
+.memory-volunteers-disclosure>summary b{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid #d5e4dc;color:#14786f;font-size:1.5rem;transition:transform .2s}.memory-volunteers-disclosure[open]>summary b{transform:rotate(180deg)}.memory-volunteers-disclosure>summary:focus-visible{outline:3px solid #16877f;outline-offset:-3px}
+.memory-volunteers-panel{padding:22px 26px;border-top:1px solid #e1e9e4}
+.memory-volunteers{margin:0;padding:0;border:0;border-radius:0;box-shadow:none}
+@media(max-width:650px){.memory-volunteers-disclosure{margin:16px 0 10px;border-radius:16px}.memory-volunteers-disclosure>summary{padding:17px}.memory-volunteers-disclosure>summary b{flex-basis:36px;width:36px;height:36px}.memory-volunteers-panel{padding:16px}}
+</style>
+<div class="memory-share-cta" style="margin-top:32px;padding:26px 30px;border:1px solid #d7e4e0;border-radius:22px;background:linear-gradient(120deg,#fffdf8,#eef8f5);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+  <div><div class="eyebrow">ET SI VOUS COMPLÉTIEZ NOS ARCHIVES ?</div><h2 style="font-family:'DM Sans',Arial,sans-serif;font-size:clamp(1.35rem,2.5vw,2rem);font-weight:800;margin:6px 0">Vous avez des photos à partager ?</h2><p style="margin:0;color:#506579">Aidez-nous à faire vivre les souvenirs de La Fabrique depuis 2013.</p></div>
+  <a class="btn yellow" href="partager-souvenirs.html#partage-formulaire" style="padding:14px 22px;white-space:normal">Partager vos souvenirs <span aria-hidden="true">→</span></a>
+</div>
+</section>
+</main>
+<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Version de travail V27.92</p></footer>
+<div id="photo-lightbox" role="dialog" aria-modal="true" aria-label="Galerie photos agrandie">
+<button class="lightbox-close" type="button" aria-label="Fermer la galerie">×</button>
+<button class="lightbox-nav lightbox-prev" type="button" aria-label="Photo précédente">‹</button>
+<img class="lightbox-image" alt=""/>
+<button class="lightbox-nav lightbox-next" type="button" aria-label="Photo suivante">›</button>
+<div class="lightbox-caption"><span class="lightbox-caption-text"></span><span class="lightbox-count" aria-live="polite"></span></div>
+</div>
+<script id="souvenirs-lightbox-script-v27-82">
+(function(){
+ const overlay=document.getElementById('photo-lightbox');
+ if(!overlay)return;
+ const enlarged=overlay.querySelector('.lightbox-image');
+ const caption=overlay.querySelector('.lightbox-caption-text');
+ const count=overlay.querySelector('.lightbox-count');
+ const closeButton=overlay.querySelector('.lightbox-close');
+ const previousButton=overlay.querySelector('.lightbox-prev');
+ const nextButton=overlay.querySelector('.lightbox-next');
+ let previousFocus=null, albumImages=[], currentIndex=0, touchStartX=0, touchStartY=0;
+ function render(){
+   const img=albumImages[currentIndex];
+   if(!img)return;
+   enlarged.src=img.currentSrc||img.src;
+   enlarged.alt=img.alt||'Photo agrandie';
+   caption.textContent=img.alt||'';
+   count.textContent='Photo '+(currentIndex+1)+' sur '+albumImages.length;
+   previousButton.disabled=currentIndex===0;
+   nextButton.disabled=currentIndex===albumImages.length-1;
+ }
+ function close(){
+   overlay.classList.remove('is-open');
+   document.body.classList.remove('lightbox-open');
+   enlarged.removeAttribute('src');
+   albumImages=[];
+   if(previousFocus) previousFocus.focus();
+ }
+ function move(step){
+   const nextIndex=currentIndex+step;
+   if(nextIndex<0||nextIndex>=albumImages.length)return;
+   currentIndex=nextIndex;
+   render();
+ }
+ function open(img){
+   const album=img.closest('.memory-year-photos');
+   albumImages=album?Array.from(album.querySelectorAll('img')):[];
+   currentIndex=albumImages.indexOf(img);
+   if(currentIndex<0||!albumImages.length)return;
+   previousFocus=img;
+   render();
+   overlay.classList.add('is-open');
+   document.body.classList.add('lightbox-open');
+   closeButton.focus();
+ }
+ document.querySelectorAll('.memory-year-photos img').forEach(function(img){
+   img.tabIndex=0;
+   img.setAttribute('role','button');
+   img.setAttribute('aria-label',(img.alt||'Photo')+' — ouvrir en grand');
+   img.addEventListener('click',function(){open(img)});
+   img.addEventListener('keydown',function(e){
+     if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img)}
+   });
+ });
+ closeButton.addEventListener('click',close);
+ previousButton.addEventListener('click',function(){move(-1)});
+ nextButton.addEventListener('click',function(){move(1)});
+ overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
+ overlay.addEventListener('touchstart',function(e){
+   if(!overlay.classList.contains('is-open')||!e.changedTouches.length)return;
+   touchStartX=e.changedTouches[0].clientX;touchStartY=e.changedTouches[0].clientY;
+ },{passive:true});
+ overlay.addEventListener('touchend',function(e){
+   if(!overlay.classList.contains('is-open')||!e.changedTouches.length)return;
+   const dx=e.changedTouches[0].clientX-touchStartX;
+   const dy=e.changedTouches[0].clientY-touchStartY;
+   if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.25)move(dx<0?1:-1);
+ },{passive:true});
+ document.addEventListener('keydown',function(e){
+   if(!overlay.classList.contains('is-open'))return;
+   if(e.key==='Escape'){close();return}
+   if(e.key==='ArrowLeft'){e.preventDefault();move(-1);return}
+   if(e.key==='ArrowRight'){e.preventDefault();move(1);return}
+ });
+})();
+</script>
+
+<script src="script.js"></script>
+<script>
+/* V27.17 — Ouverture directe des rubriques légales depuis le menu Infos pratiques. */
+document.addEventListener('DOMContentLoaded', function () {
+  var id = decodeURIComponent(window.location.hash.slice(1));
+  if (!id) return;
+  var item = document.getElementById(id);
+  if (item && item.matches('details')) {
+    item.open = true;
+    window.setTimeout(function () { item.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+  }
+});
+</script>
+<script>
+(function(){
+  const b=document.getElementById('memoryMail');
+  if(!b)return;
+  const rights=document.getElementById('memoryRights');
+  const choices=[...document.querySelectorAll('input[name="memoryConsent"]')];
+  const email='lafabriquedeleon40@gmail.com';
+  function updateMail(){
+    const choice=choices.find(input=>input.checked);
+    const allowed=!!(choice&&rights.checked);
+    b.classList.toggle('is-ready',allowed);
+    b.setAttribute('aria-disabled',allowed?'false':'true');
+    const consent=choice?.value==='publication'
+      ? 'J’AUTORISE la publication des photos/vidéos transmises sur le site de La Fabrique de Léon et ses réseaux sociaux.'
+      : choice?.value==='archives'
+        ? 'ARCHIVES UNIQUEMENT : je demande la conservation des documents transmis par l’association, sans publication sur le site ni les réseaux sociaux.'
+        : '';
+    const body='Bonjour,\n\nJe souhaite partager un souvenir avec La Fabrique de Léon.\n\nAnnée ou édition :\n\n'+consent+'\n\nJe confirme être autorisé(e) à transmettre ces documents à La Fabrique de Léon.\n\nJe joindrai moi-même les photos, vidéos ou documents à ce message avant l’envoi.\n\nCordialement,';
+    b.href='mailto:'+email+'?subject='+encodeURIComponent('Partage de souvenirs – La Fabrique de Léon')+'&body='+encodeURIComponent(body);
+  }
+  choices.forEach(input=>input.addEventListener('change',updateMail));
+  rights.addEventListener('change',updateMail);
+  b.addEventListener('click',event=>{
+    const choice=choices.find(input=>input.checked);
+    if(!choice||!rights.checked){
+      event.preventDefault();
+      document.getElementById('memoryChoiceError')?.remove();
+      const message=document.createElement('p');
+      message.id='memoryChoiceError';message.className='memory-choice-error';
+      message.setAttribute('role','alert');
+      message.textContent='Pour continuer, choisissez « Publication » ou « Archives uniquement », puis cochez la confirmation ci-dessus.';
+      b.insertAdjacentElement('beforebegin',message);
+      (!choice?choices[0]:rights).focus();
+    }
+  });
+  updateMail();
+})();
+</script>
+<script>
+/* V27.10 — cadran jours/heures/minutes, bloc association centré et galerie artistes par année. */
+(function(){
+  const grid=document.querySelector('#artistes .artists-grid');
+  if(!grid)return;
+  const cards=[...grid.querySelectorAll(':scope > .artist-card')];
+  const yearOf=card=>{const m=card.querySelector('.artist-year')?.textContent.match(/\b(20\d{2})\b/);return m?Number(m[1]):0;};
+  const groups=new Map();
+  cards.forEach(card=>{const year=yearOf(card)||0;if(!groups.has(year))groups.set(year,[]);groups.get(year).push(card);});
+  const fragment=document.createDocumentFragment();
+  [...groups.keys()].sort((a,b)=>b-a).forEach(year=>{
+    const items=groups.get(year);
+    const details=document.createElement('details');details.className='artist-year-group';
+    const summary=document.createElement('summary');summary.className='artist-year-summary';
+    const img=items[0].querySelector('.artist-image img');
+    if(img){const thumb=img.cloneNode();thumb.loading='lazy';thumb.alt='Groupe phare '+year;summary.appendChild(thumb);}
+    const label=document.createElement('span');label.className='artist-year-label';
+    const strong=document.createElement('strong');strong.textContent=year||'Archives';
+    const small=document.createElement('small');small.textContent=items.length+' artiste'+(items.length>1?'s':'')+' · cliquer pour découvrir';
+    label.append(strong,small);summary.appendChild(label);details.appendChild(summary);
+    const content=document.createElement('div');content.className='artist-year-content';items.forEach(card=>content.appendChild(card));details.appendChild(content);fragment.appendChild(details);
+  });
+  grid.replaceChildren(fragment);
+})();
+</script>
+</body></html>

@@ -1,0 +1,10 @@
+La Fabrique de Léon — Site collaboratif
+Version V27.79
+
+Base : V27.78
+
+Modifications :
+- Ajout d’un lecteur vidéo dans la page « Souvenirs en images », au-dessus des albums photos par année.
+- Vidéo de l’édition 2026 intégrée au site, avec commandes de lecture, son, affichage adapté aux mobiles et image d’aperçu.
+- Vidéo optimisée en 720p environ pour réduire fortement le poids du fichier (sans modifier la vidéo source fournie).
+- Les albums photos, le formulaire de partage des souvenirs, les autorisations et les autres pages sont conservés.

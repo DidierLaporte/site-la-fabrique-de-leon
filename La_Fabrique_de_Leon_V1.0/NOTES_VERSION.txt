@@ -1,0 +1,117 @@
+V27.79 — Vidéo souvenir 2026 intégrée dans la page « Souvenirs en images », avant les albums photos par année. Lecteur responsive avec commandes de lecture. Vidéo optimisée pour le web. Base V27.78 conservée.
+
+V27.03 — Espace dédié aux artistes : texte recentré sur les propositions artistiques, bouton e-mail avec objet dédié, adresse répétée sous le bouton supprimée.
+
+V27.00 — ESPACE ARTISTES ET PARTENAIRES
+- La section Contact a été remplacée par un bloc unique consacré aux artistes et partenaires.
+- Suppression du bandeau général de contact, du bloc bénévolat et du bloc souvenirs dans cette section.
+- Ajout d'un visuel musical, d'un texte d'invitation à collaborer, de trois possibilités de partenariat et d'un bouton mailto prérempli.
+- Mise en page responsive pour ordinateur et mobile.
+- Le site publié n'est pas modifié tant que cette archive n'est pas déployée sur Netlify.
+
+V27.02 : illustration musique agrandie avec « Musique, Partage, Convivialité » intégrés dans l’image ; suppression du badge redondant ; bouton de contact avec une seule icône enveloppe.
+
+V27.02 : bloc Artistes et partenaires placé avant Nos partenaires & soutiens ; présentation des partenaires rendue plus festive et colorée.
+
+V27.04 — ARTISTES : remplacement de « Artistes et partenaires » par « Artistes » ; nouvelle accroche « Des concerts et des arts de rue pour faire vibrer Léon ! » ; texte élargi aux musiciens, groupes et artistes de rue (spectacles, déambulations, performances et animations). Version de travail non publiée.
+
+
+V27.05 — Ajout de « Artistes » dans le menu déroulant « Infos pratiques », avec lien direct vers la nouvelle section Artistes (#contact).
+
+Version V27.11 : le bloc « Qui sommes-nous ? / Une association locale, bénévole et passionnée » est conservé uniquement dans association.html et retiré des autres pages dédiées.
+
+
+V27.17 — Menu « Infos pratiques » enrichi sur toutes les pages : Nous contacter, Partenaires, Confidentialité & RGPD, Cookies et Mentions légales. Les liens RGPD/cookies/mentions ouvrent directement la rubrique correspondante dans la page d’informations légales.
+
+V27.18 — Menu Infos pratiques simplifié : conservation de Nous contacter, Partenaires et Mentions légales. Les entrées séparées Confidentialité & RGPD et Cookies sont retirées du menu; les contenus légaux restent regroupés dans la page Mentions légales.
+
+V27.22 — Accès direct Adhérer / Faire un don
+- Les liens Adhérer pointent directement vers adhesion.html.
+- Les liens Faire un don, bouton DON et carte Soutenir pointent vers soutenir.html#dons.
+- Navigation mise à jour sur les pages HTML.
+V27.24 — Séparation des pages Artistes et Contact : la page Artistes présente uniquement les propositions artistiques ; la page Contact est réservée aux questions générales. Le menu Participer renvoie vers Artistes et Infos pratiques vers Contact.
+
+
+V27.27 — Présentation de la page Artistes reprise selon la capture de référence du 24/10/2026. Illustration grand format à gauche sur ordinateur, contenu à droite, disposition empilée sur mobile, bouton de contact conservé. Base : V27.24.
+
+
+V27.28 — Image de la page Artistes réduite et proportions rééquilibrées, avec priorité au texte et au bouton de contact.
+
+V27.29 — Page « Une question, une idée ? » : bouton vert « Nous envoyer un e-mail » centré dans le bloc, sur ordinateur et mobile. Le lien mailto est conservé.
+
+V27.30 - Correction effective du centrage horizontal du bouton de contact dans le bloc Une question, une idee, sur ordinateur et mobile.
+
+V27.31 — Le lien de menu « Souvenirs > Partagez vos souvenirs » ouvre directement le panneau de partage et ses autorisations.
+
+
+V27.32 — QUI SOMMES-NOUS fédérateur : remplacement de la photo de groupe, texte inclusif depuis 2013, valeurs bénévoles et bouton actif vers benevoles.html#benevoles.
+
+V27.36 — page Soutenir refaite selon la maquette festive validée ; liens HelloAsso, reçus fiscaux et rescrit conservés.
+
+
+V27.38 — Ajustement page Soutenir pour correspondre de plus près à la maquette validée. Liens de don, formulaires fiscaux et rescrit conservés.
+
+V27.38 : séparation de la page Soutenir (dons et reçus fiscaux) et de la page Adhérer (adhésion HelloAsso). Liens de navigation actualisés.
+
+
+V27.41 — Correction : adhesion.html utilise data-fab-page="adhesion" afin que la bannière d’adhésion et son bouton soient visibles sur la page dédiée. La page soutenir reste séparée.
+
+
+V27.48 — correction de la page Partagez vos souvenirs : affichage explicite de la section partage malgré la règle CSS générale qui masquait les sections des pages internes ; en-tête ajusté à « VOS SOUVENIRS / SOUVENIRS EN IMAGES ». Le formulaire, ses validations et le lien mailto vers lafabriquedeleon40@gmail.com sont conservés.
+
+Version V27.53 : pied de page simplifié sur toutes les pages ; conservation des liens Mentions légales, Confidentialité, Droit à l’image, CGU et HelloAsso ; version affichée harmonisée à V1.0.
+
+V27.57 : bannière de soutien alignée en deux moitiés égales, cartes de don alignées 50/50 et récupération du cadrage photo original (logo, scène et public).
+
+
+V27.65 — MAQUETTE DE COLLECTE 2027 POUR LE CONSEIL D’ADMINISTRATION
+- Création de campagne-2027.html : présentation de collecte en mode projet, sans lien de paiement actif.
+- Affichage des coûts indicatifs après réduction fiscale (66 % sous conditions).
+- Ajout d’un lien de navigation vers le projet de collecte et d’un bouton depuis l’accueil.
+- Campagne HelloAsso non publiée ; la maquette n’encaisse aucun paiement.
+
+V27.70 : correction du cadrage sur la page campagne-2027.html. La même image que sur l’accueil est affichée en entier (object-fit: contain), sans recadrage, sur ordinateur et mobile. Aucun changement sur le site en ligne; campagne toujours en maquette.
+
+V27.72 — Nouveau visuel de soutien
+- Remplacement de la photo du bandeau sur la seule page soutenir.html.
+- Nouveau visuel festif sans date ni année, avec identité La Fabrique de Léon.
+- Page d'accueil, liens de don, QR code, mentions fiscales et autres pages conservés.
+- Le visuel est cadré à gauche pour préserver le logo et le texte intégrés.
+
+
+V27.72 — Ajustements demandés : adhésion plus lisible sur téléphone ; illustration Artistes réduite ; une seule enveloppe sur le bouton Artistes ; suppression des doublons d'enveloppe dans Nous contacter.
+
+
+V27.73 – Ajustements ciblés de l’onglet Participer (Artistes)
+- Illustration réduite : colonne moins large sur ordinateur et hauteur visuelle réduite sur mobile.
+- Suppression du pseudo-élément automatique qui ajoutait une seconde enveloppe devant le bouton « Parlons de votre projet » ; l’icône présente dans le bouton reste seule.
+- Aucun autre onglet ni contenu modifié par rapport à la V27.72.
+
+V27.74 — Participer / Devenir bénévole : suppression de l'enveloppe ajoutée par CSS sur le bouton « Je rejoins l’équipe ». L'icône présente dans le HTML est conservée. Aucun autre changement.
+
+V27.75 — Participer > Devenir bénévole : ajout d'un message prérempli au bouton « Je rejoins l’équipe » (présentation, coordonnées, disponibilités et compétences facultatives). Ajout de la phrase « Pas besoin d’être un spécialiste : toutes les bonnes volontés sont les bienvenues ! ». Aucun autre changement de page.
+
+V27.76 — Participer > Artistes : le bouton « Parlons de votre projet » ouvre un courriel prérempli invitant les artistes à présenter leur univers, leur projet, leurs liens, leurs besoins techniques, disponibilités, conditions et coordonnées pour les futures éditions.
+
+
+V27.72 — COLLECTE HELLOASSO 2027 PUBLIÉE
+- La page campagne-2027.html n'est plus présentée comme une maquette en attente.
+- Les appels à l'action de la page de campagne ouvrent la collecte officielle HelloAsso dans un nouvel onglet.
+- L'accueil indique que la collecte est ouverte et propose un accès direct à HelloAsso ainsi qu'à la présentation détaillée.
+- Les liens et contenus des autres rubriques sont conservés.
+
+V27.73 — Page de collecte : suppression de la mention de validation CA et ajout d’une tuile « Un autre montant ? » reliée à HelloAsso pour le montant libre.
+
+V27.75 – Ajout de l'ouverture en grand des photos de la page Souvenirs, avec fermeture par croix, clic extérieur ou Échap.
+
+V27.76 — Ajout du pavé « La programmation 2027 se prépare ! » sur la page Découvrir Léon en Rue Libre, avec le même contenu et le même habillage que sur la campagne de soutien.
+
+V27.77 — Archives artistes 2019 et 2017 : liens Soul Kitchen, The SuperSoul Brothers, Kolinga et Wanagroove. Piva : lien de recherche en attendant confirmation du lien officiel.
+
+V27.78 — Retrait des liens PIVA (2019) et WANAGROOVE (2017). Les noms des groupes restent affichés sans lien.
+
+
+V27.80 — Contrôle responsive et accessibilité mobile : amélioration du menu mobile (aria-expanded, fermeture Échap), zones tactiles des sous-menus, focus clavier, adaptation du lecteur vidéo et finitions petits écrans. Contrôle statique des 16 pages et des ressources locales.
+
+
+V27.83 : affichage de toutes les années 2013–2026 dans Souvenirs. Albums photo disponibles : 2020, 2022, 2024, 2026. Années restantes affichées comme archives à compléter, avec lien de contribution.

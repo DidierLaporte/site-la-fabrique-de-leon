@@ -1,0 +1,8 @@
+VERSION V27.90 – GALERIES INDEPENDANTES
+
+- Conservation des trois éditions récentes : 2026, 2025 et 2024.
+- Volet « Les éditions précédentes » indépendant, dépliant, contenant uniquement les années 2013 à 2023.
+- Volet « Nos bénévoles » distinct, placé après les archives et dépliant séparément.
+- L’ouverture ou la fermeture de l’un des deux volets n’affecte plus l’autre.
+- La galerie bénévoles conserve la photo de groupe et le lien vers le formulaire de partage.
+- Vidéo des souvenirs 2026 fournie séparément dans Video_Souvenirs_2026.zip pour alléger le téléchargement.

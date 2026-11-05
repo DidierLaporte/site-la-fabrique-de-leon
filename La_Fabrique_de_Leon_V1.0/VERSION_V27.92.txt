@@ -1,0 +1,7 @@
+LA FABRIQUE DE LÉON — SITE WEB
+Version V27.92
+
+Ajout d’un album dédié aux souvenirs bénévoles et à l’ambiance collective de l’édition 2026.
+Les 10 nouvelles photos sont rangées dans assets/photos/souvenirs-benevoles-2026-*.webp et affichées uniquement dans l’accordéon « Nos bénévoles » de souvenirs.html.
+Elles ne sont pas ajoutées aux galeries d’artistes.
+Navigation plein écran conservée grâce au regroupement séparé de l’album bénévoles.

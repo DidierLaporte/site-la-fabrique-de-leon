@@ -1,0 +1,15 @@
+La Fabrique de Léon — Site collaboratif
+Version V27.80
+
+Base : V27.79
+
+Contrôle et améliorations mobile :
+- Vérification de la présence de la balise viewport sur les 16 pages HTML.
+- Vérification des liens et ressources locales : aucune ressource locale manquante détectée.
+- Menu mobile : état ouvert/fermé annoncé aux lecteurs d’écran (aria-expanded), libellé adapté et fermeture avec Échap.
+- Navigation tactile : zones de liens de sous-menu d’au moins 44 px.
+- Finition responsive des textes, galeries, lecteur vidéo et pied de page sur petits écrans.
+- Contraste de focus visible pour clavier et navigation assistée.
+- Conservation de la vidéo 2026, des albums, formulaires et contenus existants.
+
+Note de contrôle : audit statique HTML/CSS/JS effectué. Le rendu réel doit également être vérifié sur un téléphone iPhone et Android avant publication définitive.

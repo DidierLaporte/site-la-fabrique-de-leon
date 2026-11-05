@@ -1,0 +1,10 @@
+La Fabrique de Léon – Site public
+Version V27.88
+
+Évolution de la rubrique Souvenirs :
+- La section « Nos bénévoles » est désormais présentée comme un album de souvenirs.
+- Suppression du lien « Découvrir l’équipe et rejoindre les bénévoles ».
+- Suppression du lien d’envoi de photos dans ce bloc ; le formulaire de partage existant reste accessible dans son espace dédié.
+- Conservation de la photo de groupe déjà disponible. Les portraits et photos complémentaires pourront être ajoutés ultérieurement.
+
+Base : V27.87.

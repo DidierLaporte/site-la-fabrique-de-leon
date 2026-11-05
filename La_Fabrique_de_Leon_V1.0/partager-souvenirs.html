@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Vos souvenirs — Partagez vos souvenirs | La Fabrique de Léon</title>
+<meta name="description" content="Transmettez vos photos et vidéos à La Fabrique de Léon avec votre choix d’autorisation."/>
+<meta content="Le portail de La Fabrique de Léon : éditions, artistes, souvenirs, actualités et vie associative." name="description"/>
+<link href="style.css" rel="stylesheet"/>
+<style>html{scroll-behavior:smooth;scroll-padding-top:92px}.shortcut-card{display:block;cursor:pointer}.shortcut-card:focus-visible{outline:4px solid #f4cf38;outline-offset:4px}.section[id],.memory-share-panel[id]{scroll-margin-top:92px}</style>
+<style id="fabrique-page-routing">
+/* V27.10 : accueil-portail et pages dédiées, contenus d'origine conservés */
+body[data-fab-page="home"] main > section:not(.home-shortcuts):not(.hero) { display:none !important; }
+body[data-fab-page="home"] .home-shortcuts { display:block !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main > section,
+body[data-fab-page]:not([data-fab-page="home"]) main > div.section { display:none !important; }
+body[data-fab-page]:not([data-fab-page="home"]) .home-shortcuts { display:none !important; }
+body[data-fab-page="association"] #association,
+body[data-fab-page="edition-2027"] #rue-libre,
+body[data-fab-page="editions"] #historique,
+body[data-fab-page="souvenirs"] #souvenirs-annees,
+body[data-fab-page="souvenirs"] #archives,
+body[data-fab-page="soutenir"] #dons,
+body[data-fab-page="soutenir"] #adhesion,
+body[data-fab-page="partenaires"] #partenaires,
+body[data-fab-page="contact"] #contact,
+body[data-fab-page="espace-membre"] #espace-membre,
+body[data-fab-page="mentions-legales"] #infos-legales,
+body[data-fab-page="benevoles"] #benevoles { display:block !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main > .hero,
+body[data-fab-page]:not([data-fab-page="home"]) main > .home-hero { display:none !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main { padding-top: 1.5rem; }
+@media (max-width: 700px) {
+  .shortcuts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .shortcut-card { min-height: 190px; }
+}
+@media (max-width: 520px) { .shortcuts-grid { grid-template-columns: minmax(0, 1fr) !important; } .shortcut-card { min-height: 0 !important; } }
+
+body[data-fab-page="souvenirs"] #archives { display:none !important; }
+body[data-fab-page="souvenirs-partage"] #souvenirs-annees { display:none !important; }
+body[data-fab-page="souvenirs-partage"] #archives { display:block !important; }
+/* V27.48 : afficher explicitement la page de partage malgré le masquage général des sections. */
+body[data-fab-page="souvenirs-partage"] #partager-vos-souvenirs { display:block !important; }
+</style>
+</head>
+<body data-fab-page="souvenirs-partage">
+<header>
+<div class="logo">
+<a aria-label="La Fabrique de Léon — Accueil" class="logo-main" href="index.html#accueil"><img alt="La Fabrique de Léon" src="assets/logo-fabrique-cover.webp"/><span class="logo-text">La Fabrique <span>de Léon</span><small class="brand-tagline">CULTURE · MUSIQUE · SPECTACLES VIVANTS</small></span></a>
+<span class="brand-socials"><a aria-label="Instagram de La Fabrique de Léon" class="brand-social instagram" href="https://www.instagram.com/lafabriquedeleon/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="17.6" rx="5" stroke="currentColor" stroke-width="2.2" width="17.6" x="3.2" y="3.2"></rect><circle cx="12" cy="12" fill="none" r="4.1" stroke="currentColor" stroke-width="2.2"></circle><circle cx="17.7" cy="6.5" fill="currentColor" r="1.25"></circle></svg></a><a aria-label="Facebook de La Fabrique de Léon" class="brand-social facebook" href="https://www.facebook.com/fabrique.leon" rel="noopener noreferrer" target="_blank" title="Facebook"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.7 21v-8.2h2.8l.42-3.2H13.7V7.55c0-.93.26-1.56 1.6-1.56h1.72V3.12A22.2 22.2 0 0 0 14.5 3c-2.5 0-4.2 1.52-4.2 4.32V9.6H7.5v3.2h2.8V21z" fill="currentColor"></path></svg></a></span>
+</div>
+<button aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale" id="menu" type="button">☰</button>
+<nav id="navigation-principale" aria-label="Navigation principale">
+<a href="index.html#accueil">Accueil</a>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Découvrir <span>⌄</span></button><div class="nav-dropdown"><a href="association.html">L’association</a><a href="edition-2027.html">Léon en Rue Libre</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Les éditions <span>⌄</span></button><div class="nav-dropdown"><a href="editions.html">Toutes les affiches</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Souvenirs <span>⌄</span></button><div class="nav-dropdown"><a href="souvenirs.html">Photos par année</a><a href="partager-souvenirs.html#partage-formulaire">Partagez vos souvenirs</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Participer <span>⌄</span></button><div class="nav-dropdown"><a href="benevoles.html">Devenir bénévole</a><a href="adhesion.html">Adhérer</a><a href="campagne-2027.html">Soutenir Léon en Rue Libre 2027 (projet)</a><a href="soutenir.html#dons">Faire un don</a><a href="artistes.html">Artistes</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Infos pratiques <span>⌄</span></button><div class="nav-dropdown"><a href="contact.html">Nous contacter</a><a href="partenaires.html">Partenaires</a><a href="mentions-legales.html#infos-legales">Informations légales</a></div></div>
+<a class="nav-member" href="espace-membre.html">Espace membre 🔒</a>
+<a class="header-don" href="soutenir.html#dons">♥ DON</a>
+</nav>
+</header>
+<main id="accueil">
+<section class="section memories-by-year memories-unified memory-share-page" id="partager-vos-souvenirs">
+<div class="eyebrow">VOS SOUVENIRS</div>
+<h1>Souvenirs en images</h1>
+<p class="lead">Aidez-nous à faire vivre la mémoire de La Fabrique en partageant vos photos et vidéos.</p>
+<div class="memory-share-panel" id="partage-formulaire">
+<div class="memory-share-heading"><span aria-hidden="true" class="memory-camera-icon">📷</span><div><h3>Vous avez des photos à partager ?</h3><p>Contribuez à faire revivre les beaux moments de La Fabrique depuis 2013.</p></div></div>
+<p class="memory-consent-intro">Choisissez votre autorisation avant de nous envoyer vos photos, vidéos ou documents. Aucun choix n’est sélectionné par défaut.</p>
+<div class="memory-choice">
+<label><input name="memoryConsent" type="radio" value="publication"/> <span><strong>J’autorise la publication</strong><small>J’autorise la publication des photos et vidéos transmises sur le site de La Fabrique de Léon et sur ses réseaux sociaux.</small></span></label>
+<label><input name="memoryConsent" type="radio" value="archives"/> <span><strong>Archives uniquement</strong><small>Je souhaite que les documents soient conservés par l’association, sans publication sur le site ni sur les réseaux sociaux.</small></span></label>
+<label class="memory-confirm"><input id="memoryRights" type="checkbox"/> <span>Je confirme être autorisé(e) à transmettre ces documents à La Fabrique de Léon.</span></label>
+</div>
+<p class="small-note">Votre messagerie s’ouvrira sans pièce jointe : vous pourrez ajouter vous-même vos photos, vidéos ou documents avant l’envoi.</p>
+<a aria-disabled="true" class="btn yellow memory-share-button" href="mailto:lafabriquedeleon40@gmail.com" id="memoryMail"><span aria-hidden="true" class="memory-button-icon">📷</span> J’ai des photos à partager <span aria-hidden="true">→</span></a>
+</div>
+</section>
+</main>
+<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Version de travail V27.81</p></footer>
+<script src="script.js"></script>
+<script>
+/* V27.17 — Ouverture directe des rubriques légales depuis le menu Infos pratiques. */
+document.addEventListener('DOMContentLoaded', function () {
+  var id = decodeURIComponent(window.location.hash.slice(1));
+  if (!id) return;
+  var item = document.getElementById(id);
+  if (item && item.matches('details')) {
+    item.open = true;
+    window.setTimeout(function () { item.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+  }
+});
+</script>
+<script>
+(function(){
+  const button = document.getElementById('memoryMail');
+  const rights = document.getElementById('memoryRights');
+  const choices = Array.from(document.querySelectorAll('input[name="memoryConsent"]'));
+  if (!button || !rights || choices.length < 2) return;
+  const email = 'lafabriquedeleon40@gmail.com';
+
+  function selectedChoice(){ return choices.find(function(input){ return input.checked; }); }
+  function updateButton(){
+    const ready = !!(selectedChoice() && rights.checked);
+    button.classList.toggle('is-ready', ready);
+    button.setAttribute('aria-disabled', ready ? 'false' : 'true');
+    button.href = 'mailto:' + email;
+  }
+  choices.forEach(function(input){ input.addEventListener('change', updateButton); });
+  rights.addEventListener('change', updateButton);
+  button.addEventListener('click', function(event){
+    const choice = selectedChoice();
+    if (!choice || !rights.checked) {
+      event.preventDefault();
+      let message = document.getElementById('memoryChoiceError');
+      if (!message) {
+        message = document.createElement('p');
+        message.id = 'memoryChoiceError';
+        message.className = 'memory-choice-error';
+        message.setAttribute('role', 'alert');
+        button.insertAdjacentElement('beforebegin', message);
+      }
+      message.textContent = 'Pour continuer, choisissez « J’autorise la publication » ou « Archives uniquement », puis cochez la confirmation.';
+      (!choice ? choices[0] : rights).focus();
+      return;
+    }
+    const consent = choice.value === 'publication'
+      ? 'J’AUTORISE la publication des photos et vidéos transmises sur le site de La Fabrique de Léon et ses réseaux sociaux.'
+      : 'ARCHIVES UNIQUEMENT : je souhaite que les documents soient conservés sans publication sur le site ni les réseaux sociaux.';
+    const subject = 'Partage de souvenirs – La Fabrique de Léon';
+    const body = 'Bonjour,\n\nJe souhaite partager un souvenir avec La Fabrique de Léon.\n\nAnnée ou édition :\n\n' + consent + '\n\nJe confirme être autorisé(e) à transmettre ces documents à La Fabrique de Léon.\n\nJe joindrai moi-même les photos, vidéos ou documents à ce message avant l’envoi.\n\nCordialement,';
+    button.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    // Keep the browser's normal mailto navigation after the destination is prepared.
+  });
+  updateButton();
+})();
+</script>
+<script>
+/* V27.10 — cadran jours/heures/minutes, bloc association centré et galerie artistes par année. */
+(function(){
+  const grid=document.querySelector('#artistes .artists-grid');
+  if(!grid)return;
+  const cards=[...grid.querySelectorAll(':scope > .artist-card')];
+  const yearOf=card=>{const m=card.querySelector('.artist-year')?.textContent.match(/\b(20\d{2})\b/);return m?Number(m[1]):0;};
+  const groups=new Map();
+  cards.forEach(card=>{const year=yearOf(card)||0;if(!groups.has(year))groups.set(year,[]);groups.get(year).push(card);});
+  const fragment=document.createDocumentFragment();
+  [...groups.keys()].sort((a,b)=>b-a).forEach(year=>{
+    const items=groups.get(year);
+    const details=document.createElement('details');details.className='artist-year-group';
+    const summary=document.createElement('summary');summary.className='artist-year-summary';
+    const img=items[0].querySelector('.artist-image img');
+    if(img){const thumb=img.cloneNode();thumb.loading='lazy';thumb.alt='Groupe phare '+year;summary.appendChild(thumb);}
+    const label=document.createElement('span');label.className='artist-year-label';
+    const strong=document.createElement('strong');strong.textContent=year||'Archives';
+    const small=document.createElement('small');small.textContent=items.length+' artiste'+(items.length>1?'s':'')+' · cliquer pour découvrir';
+    label.append(strong,small);summary.appendChild(label);details.appendChild(summary);
+    const content=document.createElement('div');content.className='artist-year-content';items.forEach(card=>content.appendChild(card));details.appendChild(content);fragment.appendChild(details);
+  });
+  grid.replaceChildren(fragment);
+})();
+</script>
+</body></html>

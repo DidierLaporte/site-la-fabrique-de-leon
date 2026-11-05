@@ -1,0 +1,5 @@
+La Fabrique de Léon – Site public
+Version V27.85
+
+V27.85 : optimisation du poids des images en WebP pour faciliter le téléchargement, tout en conservant les pages, photos, archives et fonctionnalités de la V27.85.
+Galerie Souvenirs : trois pavés récents + un pavé Archives anciennes 2013–2023.

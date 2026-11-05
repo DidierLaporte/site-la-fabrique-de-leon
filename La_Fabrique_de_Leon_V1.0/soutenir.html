@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Soutenir La Fabrique de Léon</title>
+<meta content="Le portail de La Fabrique de Léon : éditions, artistes, souvenirs, actualités et vie associative." name="description"/>
+<link href="style.css" rel="stylesheet"/>
+<style>html{scroll-behavior:smooth;scroll-padding-top:92px}.shortcut-card{display:block;cursor:pointer}.shortcut-card:focus-visible{outline:4px solid #f4cf38;outline-offset:4px}.section[id],.memory-share-panel[id]{scroll-margin-top:92px}</style>
+<style id="fabrique-page-routing">
+/* V27.10 : accueil-portail et pages dédiées, contenus d'origine conservés */
+body[data-fab-page="home"] main > section:not(.home-shortcuts):not(.hero) { display:none !important; }
+body[data-fab-page="home"] .home-shortcuts { display:block !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main > section,
+body[data-fab-page]:not([data-fab-page="home"]) main > div.section { display:none !important; }
+body[data-fab-page]:not([data-fab-page="home"]) .home-shortcuts { display:none !important; }
+body[data-fab-page="association"] #association,
+body[data-fab-page="edition-2027"] #rue-libre,
+body[data-fab-page="editions"] #historique,
+body[data-fab-page="souvenirs"] #souvenirs-annees,
+body[data-fab-page="souvenirs"] #archives,
+body[data-fab-page="soutenir"] #dons,
+body[data-fab-page="adhesion"] #adhesion,
+body[data-fab-page="partenaires"] #partenaires,
+body[data-fab-page="contact"] #contact,
+body[data-fab-page="espace-membre"] #espace-membre,
+body[data-fab-page="mentions-legales"] #infos-legales,
+body[data-fab-page="benevoles"] #benevoles { display:block !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main > .hero,
+body[data-fab-page]:not([data-fab-page="home"]) main > .home-hero { display:none !important; }
+body[data-fab-page]:not([data-fab-page="home"]) main { padding-top: 1.5rem; }
+@media (max-width: 700px) {
+  .shortcuts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .shortcut-card { min-height: 190px; }
+}
+@media (max-width: 520px) { .shortcuts-grid { grid-template-columns: minmax(0, 1fr) !important; } .shortcut-card { min-height: 0 !important; } }
+</style>
+</head>
+<body data-fab-page="soutenir">
+<header>
+<div class="logo">
+<a aria-label="La Fabrique de Léon — Accueil" class="logo-main" href="index.html#accueil"><img alt="La Fabrique de Léon" src="assets/logo-fabrique-cover.webp"/><span class="logo-text">La Fabrique <span>de Léon</span><small class="brand-tagline">CULTURE · MUSIQUE · SPECTACLES VIVANTS</small></span></a>
+<span class="brand-socials"><a aria-label="Instagram de La Fabrique de Léon" class="brand-social instagram" href="https://www.instagram.com/lafabriquedeleon/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="17.6" rx="5" stroke="currentColor" stroke-width="2.2" width="17.6" x="3.2" y="3.2"></rect><circle cx="12" cy="12" fill="none" r="4.1" stroke="currentColor" stroke-width="2.2"></circle><circle cx="17.7" cy="6.5" fill="currentColor" r="1.25"></circle></svg></a><a aria-label="Facebook de La Fabrique de Léon" class="brand-social facebook" href="https://www.facebook.com/fabrique.leon" rel="noopener noreferrer" target="_blank" title="Facebook"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.7 21v-8.2h2.8l.42-3.2H13.7V7.55c0-.93.26-1.56 1.6-1.56h1.72V3.12A22.2 22.2 0 0 0 14.5 3c-2.5 0-4.2 1.52-4.2 4.32V9.6H7.5v3.2h2.8V21z" fill="currentColor"></path></svg></a></span>
+</div>
+<button aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale" id="menu" type="button">☰</button>
+<nav id="navigation-principale" aria-label="Navigation principale">
+<a href="index.html#accueil">Accueil</a>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Découvrir <span>⌄</span></button><div class="nav-dropdown"><a href="association.html">L’association</a><a href="edition-2027.html">Léon en Rue Libre</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Les éditions <span>⌄</span></button><div class="nav-dropdown"><a href="editions.html">Toutes les affiches</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Souvenirs <span>⌄</span></button><div class="nav-dropdown"><a href="souvenirs.html">Photos par année</a><a href="partager-souvenirs.html#partage-formulaire">Partagez vos souvenirs</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Participer <span>⌄</span></button><div class="nav-dropdown"><a href="benevoles.html">Devenir bénévole</a><a href="adhesion.html">Adhérer</a><a href="campagne-2027.html">Collecte 2027 (projet CA)</a><a href="soutenir.html#dons">Faire un don</a><a href="artistes.html">Artistes</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Infos pratiques <span>⌄</span></button><div class="nav-dropdown"><a href="contact.html">Nous contacter</a><a href="partenaires.html">Partenaires</a><a href="mentions-legales.html#infos-legales">Informations légales</a></div></div>
+<a class="nav-member" href="espace-membre.html">Espace membre 🔒</a>
+<a class="header-don" href="soutenir.html#dons">♥ DON</a>
+</nav>
+</header>
+<main id="accueil">
+<section class="hero">
+<div class="hero-copy">
+<div class="eyebrow">LÉON · LANDES · 100 % BÉNÉVOLE</div>
+<h1>La Fabrique<br/>de Léon</h1>
+<p class="tagline">Pour une culture libre, joyeuse et accessible à tous !</p>
+<p class="hero-highlight"><strong>Léon en Rue Libre</strong> — concerts et spectacles gratuits pour le public.</p>
+<p>Depuis 2013, une association 100 % bénévole fait vivre la culture, la musique, les spectacles vivants et la convivialité au cœur du village.</p>
+<div><a class="btn yellow" href="edition-2027.html">Découvrir Léon en Rue Libre <span aria-hidden="true">→</span></a><a class="btn pink" href="adhesion.html">Adhérer · 15 € <span aria-hidden="true">→</span></a><a class="btn pink" href="soutenir.html#dons">♥ Faire un don <span aria-hidden="true">→</span></a></div>
+</div>
+<div class="hero-photo"><img alt="CHELABÔM en concert lors de Léon en Rue Libre" src="assets/photos/CHELABOM31.webp"/></div>
+</section>
+<section aria-labelledby="shortcuts-title" class="home-shortcuts section">
+<div class="shortcuts-heading">
+<div class="eyebrow">BIENVENUE À LA FABRIQUE</div>
+<h2 id="shortcuts-title">Entrez dans l’univers de La Fabrique</h2>
+<p class="lead">Concerts, artistes, souvenirs et vie associative : choisissez ce qui vous intéresse et découvrez la suite.</p>
+</div>
+<div class="shortcuts-grid">
+<a aria-label="Découvrir qui nous sommes" class="shortcut-card" href="association.html">
+<img alt="Un événement culturel de La Fabrique de Léon" loading="lazy" src="assets/photos/LEONenRueLibreDivers-9.webp"/>
+<span class="shortcut-overlay"><span class="shortcut-kicker">UNE AVENTURE COLLECTIVE</span><strong>Qui sommes-nous ?</strong><span>Découvrez l’association et ses bénévoles <b aria-hidden="true">↗</b></span></span>
+</a>
+<a aria-label="Découvrir l’édition 2027" class="shortcut-card" href="edition-2027.html">
+<img alt="Ambiance de concert à Léon" loading="lazy" src="assets/photos/2027-future.webp"/>
+<span class="shortcut-overlay"><span class="shortcut-kicker">À VOS AGENDAS</span><strong>Édition 2027</strong><span>Préparez-vous pour la prochaine soirée <b aria-hidden="true">↗</b></span></span>
+</a>
+<a aria-label="Découvrir toutes les éditions" class="shortcut-card" href="editions.html">
+<img alt="Concert lors d’un événement de La Fabrique" loading="lazy" src="assets/photos/concert3.webp"/>
+<span class="shortcut-overlay"><span class="shortcut-kicker">EN IMAGES</span><strong>Toutes les éditions</strong><span>Parcourez les affiches année par année ↗</span></span>
+</a>
+<a aria-label="Partager vos souvenirs avec La Fabrique" class="shortcut-card" href="partager-souvenirs.html#partage-formulaire">
+<img alt="Le public réuni sous les platanes" loading="lazy" src="assets/photos/2024-100.webp"/>
+<span class="shortcut-overlay"><span class="shortcut-kicker">C’EST AUSSI VOTRE HISTOIRE</span><strong>Partagez vos souvenirs</strong><span>Photos et moments vécus à la Fabrique <b aria-hidden="true">↗</b></span></span>
+</a>
+<a aria-label="Soutenir La Fabrique" class="shortcut-card" href="soutenir.html#dons">
+<img alt="Un moment convivial lors d’un événement culturel" loading="lazy" src="assets/photos/2022-3.jpg"/>
+<span class="shortcut-overlay"><span class="shortcut-kicker">FAIRE VIVRE LA CULTURE</span><strong>Soutenir la Fabrique</strong><span>Faire un don et découvrir les informations utiles <b aria-hidden="true">↗</b></span></span>
+</a>
+<a aria-label="Découvrir les partenaires" class="shortcut-card" href="partenaires.html"><img alt="Les partenaires" loading="lazy" src="assets/photos/2024-114.webp"/><span class="shortcut-overlay"><span class="shortcut-kicker">ENSEMBLE</span><strong>Les partenaires</strong><span>Découvrez ceux qui soutiennent la Fabrique <b aria-hidden="true">↗</b></span></span></a>
+<a aria-label="Contacter La Fabrique" class="shortcut-card" href="contact.html#contact-email"><img alt="Contacter la Fabrique" loading="lazy" src="assets/photos/LEONenRueLibreDivers-9.webp"/><span class="shortcut-overlay"><span class="shortcut-kicker">À VOTRE ÉCOUTE</span><strong>Contacter la Fabrique</strong><span>Une question ou envie de participer ? <b aria-hidden="true">↗</b></span></span></a>
+</div>
+</section>
+
+<section class="section volunteer-page-section" id="benevoles" aria-labelledby="benevoles-title">
+  <div class="volunteer-card">
+    <img class="volunteer-card-image" src="assets/contact-volunteers.png" alt="Illustration colorée de mains levées autour d’un cœur" loading="lazy">
+    <div class="volunteer-card-copy">
+      <span class="contact-kicker">PARTICIPEZ À L’AVENTURE</span>
+      <h2 id="benevoles-title">Devenir bénévole</h2>
+      <p>Envie de donner un coup de main avant ou pendant le festival ? Rejoignez notre équipe de bénévoles !</p>
+      <a class="volunteer-join-button" href="mailto:lafabriquedeleon40@gmail.com?subject=Je%20souhaite%20devenir%20b%C3%A9n%C3%A9vole"><span aria-hidden="true">✉</span> Je rejoins l’équipe <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+<section aria-label="Léon en Rue Libre, notre événement phare" class="section event event-phare-visual" id="rue-libre">
+<figure class="event-phare-art"><img alt="Léon en Rue Libre : mini-festival musical convivial et gratuit, avec une scène de concert, des guirlandes lumineuses, des fanions colorés, un public réuni et un message de remerciement aux bénévoles." src="assets/event-phare-festif.webp"/></figure>
+</section>
+<section class="section history-section" id="historique">
+<div class="eyebrow">DEPUIS 2013</div>
+<h2>Toutes nos éditions</h2>
+<p class="lead">Parcourez les éditions en un coup d’œil : cliquez sur une affiche pour l’agrandir.</p>
+<div class="editions-poster-grid"><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2026 en grand" class="edition-poster-image" href="assets/affiches/affiche-2026.webp" target="_blank"><img alt="Affiche 2026" loading="lazy" src="assets/affiches/affiche-2026.webp"/></a><span class="edition-poster-year">2026</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2026</h3><ul><li><a aria-label="Visiter le site officiel de CHELABÔM" class="edition-artist-link" href="https://chelabom.carrd.co/" rel="noopener noreferrer" target="_blank">CHELABÔM <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de THE SUPERSOUL BROTHERS" class="edition-artist-link" href="https://thesupersoulbrothers.com/" rel="noopener noreferrer" target="_blank">THE SUPERSOUL BROTHERS <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de TRITONS" class="edition-artist-link" href="https://www.tritonsmusic.com/" rel="noopener noreferrer" target="_blank">TRITONS <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de JAY TOOR" class="edition-artist-link" href="https://www.jay-toor.com/" rel="noopener noreferrer" target="_blank">JAY TOOR <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de ANTOINE LE DIABOLO" class="edition-artist-link" href="https://antoineboyerdiaboliste.com/" rel="noopener noreferrer" target="_blank">ANTOINE LE DIABOLO <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de NACAR" class="edition-artist-link" href="https://derives.studio/nacar-sortileges-afro-indigenes/" rel="noopener noreferrer" target="_blank">NACAR <span class="artist-link-caption">Site officiel ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2025 en grand" class="edition-poster-image" href="assets/affiches/affiche-2025.jpg" target="_blank"><img alt="Affiche 2025" loading="lazy" src="assets/affiches/affiche-2025.jpg"/></a><span class="edition-poster-year">2025</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2025</h3><ul><li><a aria-label="Effectuer une recherche web pour THE SOULPHOENIXS" class="edition-artist-link" href="https://www.google.com/search?q=THE%20SOULPHOENIXS%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">THE SOULPHOENIXS <span class="artist-link-caption">Recherche web ↗</span></a></li><li><a aria-label="Effectuer une recherche web pour CHOSE" class="edition-artist-link" href="https://www.google.com/search?q=CHOSE%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">CHOSE <span class="artist-link-caption">Recherche web ↗</span></a></li><li><a aria-label="Effectuer une recherche web pour NICOLAS WOILET TRIO" class="edition-artist-link" href="https://www.google.com/search?q=NICOLAS%20WOILET%20TRIO%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">NICOLAS WOILET TRIO <span class="artist-link-caption">Recherche web ↗</span></a></li><li><a aria-label="Effectuer une recherche web pour MATHIEU MOUSTACHE" class="edition-artist-link" href="https://www.google.com/search?q=MATHIEU%20MOUSTACHE%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">MATHIEU MOUSTACHE <span class="artist-link-caption">Recherche web ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2024 en grand" class="edition-poster-image" href="assets/affiches/affiche-2024.jpg" target="_blank"><img alt="Affiche 2024" loading="lazy" src="assets/affiches/affiche-2024.jpg"/></a><span class="edition-poster-year">2024</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2024</h3><ul><li><a aria-label="Visiter le site officiel de POLYLOGUE FROM SILA" class="edition-artist-link" href="https://polyloguemusic.bandcamp.com/" rel="noopener noreferrer" target="_blank">POLYLOGUE FROM SILA <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de HONKY TONKY TRIO" class="edition-artist-link" href="https://www.honkytonkytrio.com/" rel="noopener noreferrer" target="_blank">HONKY TONKY TRIO <span class="artist-link-caption">Site officiel ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2023 en grand" class="edition-poster-image" href="assets/affiches/affiche-2023.webp" target="_blank"><img alt="Affiche 2023" loading="lazy" src="assets/affiches/affiche-2023.webp"/></a><span class="edition-poster-year">2023</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2023</h3><ul><li><a aria-label="Visiter le site officiel de KICCA" class="edition-artist-link" href="https://kicca.fr/" rel="noopener noreferrer" target="_blank">KICCA <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de EZEC LE FLOC'H" class="edition-artist-link" href="https://ezec.fr/" rel="noopener noreferrer" target="_blank">EZEC LE FLOC'H <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de VELVET PROJECT" class="edition-artist-link" href="https://www.lma-info.com/accompagnement/musiciens-groupes/velvet-project/" rel="noopener noreferrer" target="_blank">VELVET PROJECT <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de LES STEADIES" class="edition-artist-link" href="https://www.lagrosseradio.com/artistes/les-steadies/" rel="noopener noreferrer" target="_blank">LES STEADIES <span class="artist-link-caption">Site officiel ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2022 en grand" class="edition-poster-image" href="assets/affiches/affiche-2022.jpg" target="_blank"><img alt="Affiche 2022" loading="lazy" src="assets/affiches/affiche-2022.jpg"/></a><span class="edition-poster-year">2022</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2022</h3><ul><li><a aria-label="Visiter le site officiel de PINA POLAR" class="edition-artist-link" href="https://www.pinapolar.com/" rel="noopener noreferrer" target="_blank">PINA POLAR <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de SHAOLIN TEMPLE DEFENDERS" class="edition-artist-link" href="https://shaolintempledefenders.com/" rel="noopener noreferrer" target="_blank">SHAOLIN TEMPLE DEFENDERS <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Visiter le site officiel de JUST MARRIED" class="edition-artist-link" href="https://www.justmarriedband.com/" rel="noopener noreferrer" target="_blank">JUST MARRIED <span class="artist-link-caption">Site officiel ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2019 en grand" class="edition-poster-image" href="assets/affiches/affiche-2019.webp" target="_blank"><img alt="Affiche 2019" loading="lazy" src="assets/affiches/affiche-2019.webp"/></a><span class="edition-poster-year">2019</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2019</h3><p class="small-note">La liste des artistes de cette édition reste à compléter dans les archives.</p></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2018 en grand" class="edition-poster-image" href="assets/affiches/affiche-2018.webp" target="_blank"><img alt="Affiche 2018" loading="lazy" src="assets/affiches/affiche-2018.webp"/></a><span class="edition-poster-year">2018</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2018</h3><ul><li><a aria-label="Effectuer une recherche web pour SUNNY DAZE" class="edition-artist-link" href="https://www.google.com/search?q=SUNNY%20DAZE%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">SUNNY DAZE <span class="artist-link-caption">Recherche web ↗</span></a></li><li><a aria-label="Visiter le site officiel de THE PATHFINDERS" class="edition-artist-link" href="https://jazzandco.ch/the-pathfinders/" rel="noopener noreferrer" target="_blank">THE PATHFINDERS <span class="artist-link-caption">Site officiel ↗</span></a></li><li><a aria-label="Effectuer une recherche web pour SANPAWA" class="edition-artist-link" href="https://www.google.com/search?q=SANPAWA%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">SANPAWA <span class="artist-link-caption">Recherche web ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2017 en grand" class="edition-poster-image" href="assets/affiches/affiche-2017.jpg" target="_blank"><img alt="Affiche 2017" loading="lazy" src="assets/affiches/affiche-2017.jpg"/></a><span class="edition-poster-year">2017</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2017</h3><p class="small-note">La liste des artistes de cette édition reste à compléter dans les archives.</p></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2016 en grand" class="edition-poster-image" href="assets/affiches/2016.webp" target="_blank"><img alt="Affiche 2016" loading="lazy" src="assets/affiches/2016.webp"/></a><span class="edition-poster-year">2016</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2016</h3><ul><li><a aria-label="Effectuer une recherche web pour SOUGUIBAT TRIO" class="edition-artist-link" href="https://www.google.com/search?q=SOUGUIBAT%20TRIO%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">SOUGUIBAT TRIO <span class="artist-link-caption">Recherche web ↗</span></a></li><li><a aria-label="Visiter le site officiel de SNAWT" class="edition-artist-link" href="https://girondemusicbox.fr/artistes/snawt/" rel="noopener noreferrer" target="_blank">SNAWT <span class="artist-link-caption">Site officiel ↗</span></a></li></ul></div></details></div><div class="edition-entry"><details class="edition-artists-accordion"><summary><a aria-label="Ouvrir l’affiche 2013 en grand" class="edition-poster-image" href="assets/affiches/affiche-2013.jpg" target="_blank"><img alt="Affiche 2013" loading="lazy" src="assets/affiches/affiche-2013.jpg"/></a><span class="edition-poster-year">2013</span><span aria-hidden="true" class="edition-toggle">+</span></summary><div class="edition-artists-list"><h3>Artistes et groupes — 2013</h3><ul><li><a aria-label="Effectuer une recherche web pour LUNE DE LA CHANCE" class="edition-artist-link" href="https://www.google.com/search?q=LUNE%20DE%20LA%20CHANCE%20artiste%20groupe%20site%20officiel" rel="noopener noreferrer" target="_blank">LUNE DE LA CHANCE <span class="artist-link-caption">Recherche web ↗</span></a></li><li><a aria-label="Visiter le site officiel de MATEO CACAO" class="edition-artist-link" href="https://mateocacao.bandcamp.com/" rel="noopener noreferrer" target="_blank">MATEO CACAO <span class="artist-link-caption">Site officiel ↗</span></a></li></ul></div></details></div></div>
+</section>
+<section class="section memories-by-year memories-unified" id="souvenirs-annees">
+<div class="eyebrow">VOS SOUVENIRS</div>
+<h2>Souvenirs en images</h2>
+<p class="lead">Choisissez une année pour découvrir les photos, les concerts et les moments de convivialité de La Fabrique.</p>
+<div class="memory-year-grid">
+<details class="memory-year-card"><summary><img alt="Ambiance 2026" loading="lazy" src="assets/photos/2026-ambiance.webp"/><span>2026 <small>Voir les photos ↓</small></span></summary><div class="memory-year-photos"><img alt="Concert 2026" loading="lazy" src="assets/photos/2026-ambiance.webp"/><img alt="CHELABÔM" loading="lazy" src="assets/photos/CHELABOM42.webp"/><img alt="Public et concert" loading="lazy" src="assets/photos/concert3.webp"/></div></details>
+<details class="memory-year-card"><summary><img alt="Souvenirs 2024" loading="lazy" src="assets/photos/2024-114.webp"/><span>2024 <small>Voir les photos ↓</small></span></summary><div class="memory-year-photos"><img alt="Artistes sur scène" loading="lazy" src="assets/photos/2024-114.webp"/><img alt="Public 2024" loading="lazy" src="assets/photos/2024-100.webp"/></div></details>
+<details class="memory-year-card"><summary><img alt="Souvenirs 2022" loading="lazy" src="assets/photos/2022-3.jpg"/><span>2022 <small>Voir les photos ↓</small></span></summary><div class="memory-year-photos"><img alt="Public 2022" loading="lazy" src="assets/photos/2022-3.jpg"/><img alt="Concert 2022" loading="lazy" src="assets/photos/2022-4.jpg"/></div></details>
+<details class="memory-year-card"><summary><img alt="Archives photos anciennes" loading="lazy" src="assets/photos/2020-1.jpg"/><span>Archives <small>Voir les photos ↓</small></span></summary><div class="memory-year-photos"><img alt="Photo d’archives" loading="lazy" src="assets/photos/2020-1.jpg"/><img alt="Photo d’archives" loading="lazy" src="assets/photos/2020-3.jpg"/></div></details>
+</div>
+<div class="memory-share-panel" id="archives">
+<div class="memory-share-heading"><span aria-hidden="true" class="memory-camera-icon">📷</span><div><h3>Vous avez des photos à partager ?</h3><p>Contribuez à faire revivre les beaux moments de La Fabrique depuis 2013.</p></div></div>
+<p class="memory-consent-intro">Choisissez votre autorisation avant de nous envoyer vos photos, vidéos ou documents. Aucun choix n’est sélectionné par défaut.</p>
+<div class="memory-choice">
+<label><input name="memoryConsent" type="radio" value="publication"/> <span><strong>J’autorise la publication</strong><small>J’autorise la publication des photos et vidéos transmises sur le site de La Fabrique de Léon et sur ses réseaux sociaux.</small></span></label>
+<label><input name="memoryConsent" type="radio" value="archives"/> <span><strong>Archives uniquement</strong><small>Je souhaite que les documents soient conservés par l’association, sans publication sur le site ni sur les réseaux sociaux.</small></span></label>
+<label class="memory-confirm"><input id="memoryRights" type="checkbox"/> <span>Je confirme être autorisé(e) à transmettre ces documents à La Fabrique de Léon.</span></label>
+</div>
+<p class="small-note">Votre messagerie s’ouvrira sans pièce jointe : vous pourrez ajouter vous-même vos photos, vidéos ou documents avant l’envoi.</p>
+<a aria-disabled="true" class="btn yellow memory-share-button" href="mailto:lafabriquedeleon40@gmail.com" id="memoryMail"><span aria-hidden="true" class="memory-button-icon">📷</span> J’ai des photos à partager <span aria-hidden="true">→</span></a>
+</div>
+</section>
+<section class="donations-section donations-compact" id="dons">
+<div class="support-hero">
+  <div class="support-hero-copy">
+    <div class="eyebrow">❤️ NOUS SOUTENIR</div>
+    <h2>Faisons vivre<br/>la culture<br/><span>à Léon !</span></h2>
+    <p>Des concerts, des artistes, des spectacles vivants et des moments partagés, gratuits pour tous.</p>
+    <p class="support-thanks">Votre don nous aide à faire vivre cette aventure.</p>
+    <div class="support-thanks-script">Merci ! <span aria-hidden="true">♥</span></div>
+  </div>
+  <div class="support-hero-image" role="img" aria-label="Ambiance festive d’un concert de La Fabrique de Léon"></div>
+</div>
+<div class="donations-compact-grid">
+<article class="donation-card donation-compact-main">
+<div class="donation-compact-copy">
+<span class="donation-label">DON EN LIGNE</span>
+<h3>Faire un don<br/>à La Fabrique</h3>
+<p>Contribuez au maintien des concerts et spectacles gratuits.</p>
+<a class="button button-primary donation-cta" href="https://www.helloasso.com/associations/la-fabrique-de-leon/formulaires/2" rel="noopener" target="_blank">Je fais un don en ligne <span aria-hidden="true">→</span></a>
+</div>
+<a aria-label="Ouvrir le formulaire de don HelloAsso" class="donation-compact-qr" href="https://www.helloasso.com/associations/la-fabrique-de-leon/formulaires/2" rel="noopener" target="_blank">
+<img alt="QR code HelloAsso pour faire un don à La Fabrique de Léon" loading="lazy" src="assets/qr-code-dons-helloasso.png"/>
+<span>Scanner le QR code<br/>pour faire un don</span>
+</a>
+</article>
+<article class="donation-card donation-compact-tax">
+<div class="donation-icon">🧾</div>
+<div class="donation-compact-tax-content">
+<span class="donation-label">REÇUS FISCAUX</span>
+<h3>Vous avez fait un don ?</h3>
+<p>Retrouvez le formulaire correspondant à votre situation pour bénéficier des avantages fiscaux.</p>
+<div class="donation-tax-links">
+<a class="btn support-tax-btn" href="Recu_fiscal_particuliers_2041-RD_pre-rempli_La_Fabrique_de_Leon.pdf" rel="noopener" target="_blank">Particulier · 2041-RD →</a>
+<a class="btn support-tax-btn" href="CERFA-DON-ENTREPRISE-La_Fabrique.pdf" rel="noopener" target="_blank">Entreprise · 2041-MEC-SD →</a>
+</div>
+<details class="form-help-details"><summary>Conseils pour remplir les formulaires</summary><p>Téléchargez le PDF puis ouvrez-le dans un lecteur compatible, par exemple Adobe Acrobat Reader. Si le document ne permet pas la saisie, imprimez-le ou utilisez le formulaire officiel de l’administration.</p></details>
+</div>
+</article>
+</div>
+<div class="tax-note donation-note support-fiscal-note"><span class="support-fiscal-kicker">INFORMATION FISCALE</span><p><strong>La Fabrique de Léon</strong> relève du régime des articles 200 et 238 bis du Code général des impôts, selon le rescrit fiscal du 12 avril 2023. Les réductions d’impôt dépendent des conditions légales applicables.</p><a href="rescrit-fiscal-la-fabrique.pdf" rel="noopener" target="_blank">Consulter notre rescrit fiscal →</a></div>
+</section>
+</main>
+<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Version de travail V27.81</p></footer>
+<script src="script.js"></script>
+<script>
+/* V27.17 — Ouverture directe des rubriques légales depuis le menu Infos pratiques. */
+document.addEventListener('DOMContentLoaded', function () {
+  var id = decodeURIComponent(window.location.hash.slice(1));
+  if (!id) return;
+  var item = document.getElementById(id);
+  if (item && item.matches('details')) {
+    item.open = true;
+    window.setTimeout(function () { item.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+  }
+});
+</script>
+<script>
+(function(){
+  const b=document.getElementById('memoryMail');
+  if(!b)return;
+  const rights=document.getElementById('memoryRights');
+  const choices=[...document.querySelectorAll('input[name="memoryConsent"]')];
+  const email='lafabriquedeleon40@gmail.com';
+  function updateMail(){
+    const choice=choices.find(input=>input.checked);
+    const allowed=!!(choice&&rights.checked);
+    b.classList.toggle('is-ready',allowed);
+    b.setAttribute('aria-disabled',allowed?'false':'true');
+    const consent=choice?.value==='publication'
+      ? 'J’AUTORISE la publication des photos/vidéos transmises sur le site de La Fabrique de Léon et ses réseaux sociaux.'
+      : choice?.value==='archives'
+        ? 'ARCHIVES UNIQUEMENT : je demande la conservation des documents transmis par l’association, sans publication sur le site ni les réseaux sociaux.'
+        : '';
+    const body='Bonjour,\n\nJe souhaite partager un souvenir avec La Fabrique de Léon.\n\nAnnée ou édition :\n\n'+consent+'\n\nJe confirme être autorisé(e) à transmettre ces documents à La Fabrique de Léon.\n\nJe joindrai moi-même les photos, vidéos ou documents à ce message avant l’envoi.\n\nCordialement,';
+    b.href='mailto:'+email+'?subject='+encodeURIComponent('Partage de souvenirs – La Fabrique de Léon')+'&body='+encodeURIComponent(body);
+  }
+  choices.forEach(input=>input.addEventListener('change',updateMail));
+  rights.addEventListener('change',updateMail);
+  b.addEventListener('click',event=>{
+    const choice=choices.find(input=>input.checked);
+    if(!choice||!rights.checked){
+      event.preventDefault();
+      document.getElementById('memoryChoiceError')?.remove();
+      const message=document.createElement('p');
+      message.id='memoryChoiceError';message.className='memory-choice-error';
+      message.setAttribute('role','alert');
+      message.textContent='Pour continuer, choisissez « Publication » ou « Archives uniquement », puis cochez la confirmation ci-dessus.';
+      b.insertAdjacentElement('beforebegin',message);
+      (!choice?choices[0]:rights).focus();
+    }
+  });
+  updateMail();
+})();
+</script>
+<script>
+/* V27.10 — cadran jours/heures/minutes, bloc association centré et galerie artistes par année. */
+(function(){
+  const grid=document.querySelector('#artistes .artists-grid');
+  if(!grid)return;
+  const cards=[...grid.querySelectorAll(':scope > .artist-card')];
+  const yearOf=card=>{const m=card.querySelector('.artist-year')?.textContent.match(/\b(20\d{2})\b/);return m?Number(m[1]):0;};
+  const groups=new Map();
+  cards.forEach(card=>{const year=yearOf(card)||0;if(!groups.has(year))groups.set(year,[]);groups.get(year).push(card);});
+  const fragment=document.createDocumentFragment();
+  [...groups.keys()].sort((a,b)=>b-a).forEach(year=>{
+    const items=groups.get(year);
+    const details=document.createElement('details');details.className='artist-year-group';
+    const summary=document.createElement('summary');summary.className='artist-year-summary';
+    const img=items[0].querySelector('.artist-image img');
+    if(img){const thumb=img.cloneNode();thumb.loading='lazy';thumb.alt='Groupe phare '+year;summary.appendChild(thumb);}
+    const label=document.createElement('span');label.className='artist-year-label';
+    const strong=document.createElement('strong');strong.textContent=year||'Archives';
+    const small=document.createElement('small');small.textContent=items.length+' artiste'+(items.length>1?'s':'')+' · cliquer pour découvrir';
+    label.append(strong,small);summary.appendChild(label);details.appendChild(summary);
+    const content=document.createElement('div');content.className='artist-year-content';items.forEach(card=>content.appendChild(card));details.appendChild(content);fragment.appendChild(details);
+  });
+  grid.replaceChildren(fragment);
+})();
+</script>
+</body></html>

@@ -1,0 +1,6 @@
+La Fabrique de Léon — Version V27.87
+
+- Ajout d’un encart Nos bénévoles dans Souvenirs en images.
+- Archives 2013–2023 regroupées dans un volet dépliable.
+- Vidéo souvenir 2026 réduite et mieux intégrée à la mise en page.
+- Base : V27.86 validée par l’utilisateur.
