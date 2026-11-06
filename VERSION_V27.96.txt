@@ -1,0 +1,11 @@
+VERSION V27.96 — CORRECTION MOBILE
+Date : 6 novembre 2026
+
+- Page « Découvrir / Léon en Rue Libre » : l'affiche illustrée n'est plus masquée sur mobile.
+- L'affiche est affichée à la largeur disponible, sans recadrage de son contenu.
+- Le texte explicatif mobile déjà présent est conservé sous l'affiche.
+- La présentation ordinateur n'est pas modifiée.
+- Vérification des liens vers le Calculateur / caisse repas : les liens présents dans les pages concernées pointent vers https://gb2b.github.io/leon-calcul/ .
+- Le fonctionnement réel du calculateur reste à valider dans un navigateur.
+
+La version V27.95 reste en ligne jusqu'à validation et publication explicite de cette version.
