@@ -1,0 +1,16 @@
+LA FABRIQUE DE LÉON — VERSION V28.05
+
+Modifications :
+- Bouton « Menu » nettement réduit sur tablette et téléphone : son libellé est désormais visuellement secondaire par rapport au bouton « Accueil ».
+- Conservation du bouton « Accueil » permanent dans le bandeau sur les pages intérieures.
+- Pied de page simplifié : une seule adresse officielle, www.lafabriquedeleon.fr, avec lien vers la version www.
+- Conservation de la page Artistes avec l’illustration festive « Musique · Partage · Convivialité ».
+- Conservation de l’illustration dessinée du pavé « Proposez votre spectacle » sur l’accueil.
+- Mentions légales : distinction maintenue entre GitHub Pages (publication/hébergement du site) et OVHcloud (nom de domaine et DNS).
+- Le domaine racine reste déclaré dans le fichier CNAME ; les redirections www/racine sont à vérifier après propagation et activation HTTPS.
+
+Contrôles effectués :
+- Vérification de la présence des fichiers HTML, CSS, JavaScript et des illustrations dans l’archive.
+- Vérification de l’unicité de l’adresse officielle dans les pieds de page modifiés.
+- Vérification des règles responsive du bouton Menu.
+- Une validation visuelle sur téléphone/tablette réels reste recommandée avant publication.

@@ -2036,3 +2036,257 @@ body[data-fab-page="soutenir"] .support-hero-image {
   .event-phare-visual .event-phare-art{display:block!important}
   .event-phare-visual .event-phare-art img{display:block;width:100%;height:auto;object-fit:contain}
 }
+
+
+/* V27.97 — harmonisation de l'en-tête, du portail, du visuel phare et du pied de page */
+@media (min-width: 1401px) {
+  header { gap: clamp(16px, 2vw, 34px); }
+  header .logo { flex: 0 1 auto; max-width: 47%; }
+  header nav { flex: 1 1 auto; min-width: 0; justify-content: flex-end; gap: clamp(8px, .9vw, 17px); }
+  header nav > a, header nav .nav-trigger { white-space: nowrap; }
+}
+@media (max-width: 1400px) and (min-width: 951px) {
+  header { position: sticky; display: flex; flex-wrap: nowrap; align-items: center; gap: 12px; }
+  header .logo { flex: 1 1 auto; min-width: 0; max-width: calc(100% - 56px); }
+  header #menu { display: block; flex: 0 0 44px; margin-left: auto; }
+  header nav { display: none; }
+  header.open nav {
+    display: flex; position: absolute; top: 100%; right: 24px; left: auto;
+    width: min(430px, calc(100vw - 48px)); box-sizing: border-box;
+    padding: 14px 16px 18px; background: #fffdf8; border: 1px solid #eadfce;
+    border-radius: 0 0 18px 18px; box-shadow: 0 16px 30px #10263820;
+    flex-direction: column; align-items: stretch; gap: 5px;
+    max-height: calc(100vh - 110px); overflow-y: auto; z-index: 31;
+  }
+  header.open nav > a, header.open nav .nav-trigger {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; box-sizing: border-box; min-height: 44px; padding: 11px 10px;
+    text-align: left; white-space: normal;
+  }
+  header.open nav .nav-group { display: block; width: 100%; }
+  header.open nav .nav-dropdown {
+    position: static; min-width: 0; margin: 0 0 6px 8px;
+    box-shadow: none; border-radius: 10px;
+  }
+}
+body[data-fab-page="home"] .shortcut-contact-illustration,
+body[data-fab-page="home"] .shortcut-artist-logo {
+  object-fit: contain;
+  object-position: center;
+  padding: 16px 24px 4px;
+  background: #fffdf8;
+}
+body[data-fab-page="home"] .shortcut-artist-logo { padding: 10px 34px 0; }
+/* V28.02 — pavé artistes harmonisé avec les autres cartes de l’accueil.
+   La photographie reste dans le même cadre, sans effet d’affiche indépendante. */
+body[data-fab-page="home"] .shortcut-artist-photo {
+  width: 100%; height: 190px; min-height: 0; padding: 0 !important;
+  object-fit: cover; object-position: 68% center; background: #172b3b;
+}
+@media(max-width:900px) {
+  body[data-fab-page="home"] .shortcut-artist-photo { height: 170px; }
+}
+@media(max-width:560px) {
+  body[data-fab-page="home"] .shortcut-artist-card {
+    grid-template-columns: 36% minmax(0,64%); min-height: 184px;
+  }
+  body[data-fab-page="home"] .shortcut-artist-card .shortcut-artist-photo {
+    width: 100%; height: 100%; min-height: 184px; padding: 0 !important;
+    object-fit: cover; object-position: 68% center;
+  }
+  body[data-fab-page="home"] .shortcut-artist-card .shortcut-overlay {
+    min-width: 0; padding: 14px 12px; gap: 6px;
+  }
+  body[data-fab-page="home"] .shortcut-artist-card .shortcut-kicker {
+    font-size: .65rem; letter-spacing: .07em; overflow-wrap: anywhere;
+  }
+  body[data-fab-page="home"] .shortcut-artist-card .shortcut-overlay strong {
+    font-size: .98rem; line-height: 1.12;
+  }
+  body[data-fab-page="home"] .shortcut-artist-card .shortcut-overlay>span:last-child {
+    padding-right: 0; font-size: .8rem; line-height: 1.3;
+  }
+  body[data-fab-page="home"] .shortcut-artist-card .shortcut-overlay b {
+    position: static; width: 30px; height: 30px; margin-top: 2px; font-size: 1rem;
+  }
+}
+body[data-fab-page="home"] .shortcut-contact-illustration { padding: 18px 24px 8px; }
+.event-phare-art {
+  width: min(100%, 1500px);
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px #10253624;
+}
+.event-phare-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+}
+@media (max-width: 700px) {
+  .event-phare-visual { padding: 22px 5vw !important; }
+  .event-phare-art { width: 100%; max-width: 100%; border-radius: 16px; }
+  .event-phare-art img { border-radius: 16px; }
+}
+.site-footer {
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) 2fr;
+  align-items: center;
+  gap: 18px 28px;
+  padding: 28px 5%;
+  background: #071723;
+  color: #fff;
+}
+.site-footer .footer-brand { display: flex; flex-direction: column; gap: 3px; }
+.site-footer .footer-brand strong { font-size: 1.2rem; }
+.site-footer .footer-brand span { color: #ffd21a; font-size: .9rem; font-weight: 700; }
+.site-footer .footer-links {
+  display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 12px 22px;
+}
+.site-footer .footer-links a { color: #ffd21a; text-decoration: underline; text-underline-offset: 3px; }
+.site-footer .footer-copyright {
+  grid-column: 1 / -1; margin: 0; padding-top: 13px;
+  border-top: 1px solid #ffffff35; color: #e7edf0; text-align: center; font-size: .88rem;
+}
+@media (max-width: 760px) {
+  .site-footer { grid-template-columns: 1fr; gap: 14px; padding: 25px 6vw; text-align: center; }
+  .site-footer .footer-brand { align-items: center; }
+  .site-footer .footer-links { justify-content: center; gap: 10px 16px; }
+  .site-footer .footer-copyright { grid-column: auto; }
+}
+
+
+/* V28.02 — sous-menus sans bouton de fermeture : le clic hors lien referme le panneau. */
+@media (max-width: 1400px) {
+  header.open nav .nav-dropdown { padding: 8px; }
+}
+@media (min-width: 1401px) {
+  nav .nav-dropdown { min-width: 250px; }
+}
+/* Adresse officielle visible dans le pied de page. */
+.footer-domain { margin: 4px 0 0; font-size: .9rem; color: #f9df87; }
+.footer-domain a { color: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+
+/* V28.03 — illustration festive du pavé artistes et accès Accueil permanent. */
+.header-home {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 42px;
+  margin-left: 12px;
+  padding: 7px 15px;
+  border: 2px solid #ffd52f;
+  border-radius: 999px;
+  background: #fff5d5;
+  color: #142b3b;
+  font-size: .9rem;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .18s ease, transform .18s ease;
+}
+.header-home:hover, .header-home:focus-visible {
+  background: #ffdf55;
+  transform: translateY(-1px);
+}
+.header-home-icon { font-size: 1.2rem; line-height: 1; }
+.header-home:focus-visible { outline: 3px solid #ef641f; outline-offset: 3px; }
+
+/* L’illustration est traitée comme les autres dessins du portail :
+   même hauteur, même fond ivoire, même cadrage et aucune photo de scène. */
+body[data-fab-page="home"] .shortcut-artist-illustration {
+  width: 100%;
+  height: 190px;
+  min-height: 190px;
+  padding: 13px 18px 4px;
+  object-fit: contain;
+  object-position: center;
+  background: #fffdf8;
+}
+@media (max-width: 900px) {
+  header { gap: 8px; }
+  header .header-home { margin-left: 0; }
+  body[data-fab-page="home"] .shortcut-artist-illustration { height: 170px; min-height: 170px; }
+}
+@media (max-width: 560px) {
+  header .header-home { min-height: 40px; padding: 6px 10px; gap: 4px; font-size: .78rem; }
+  header .header-home-icon { font-size: 1.05rem; }
+  body[data-fab-page="home"] .shortcut-artist-illustration {
+    width: 100%; height: 100%; min-height: 175px; padding: 12px 8px;
+    object-fit: contain; object-position: center; background: #fffdf8;
+  }
+}
+@media (max-width: 390px) {
+  header .logo { max-width: calc(100% - 112px); }
+  header .logo-main { min-width: 0; }
+  header .logo-text { overflow: hidden; text-overflow: ellipsis; }
+  header .header-home { padding: 6px 8px; }
+}
+
+
+/* V28.04 — libellé explicite du bouton Menu sur tablette et mobile. */
+@media (max-width: 950px) {
+  header #menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 78px;
+    height: 42px;
+    margin-left: auto;
+    padding: 0 10px;
+    border: 1px solid #ead9b4;
+    border-radius: 12px;
+    background: #fff4d4;
+    color: #173247;
+    font: 700 .9rem 'DM Sans', Arial, sans-serif;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  header #menu .menu-label { display: inline; }
+  header #menu .menu-lines { font-size: 1.55rem; line-height: 1; }
+}
+@media (max-width: 390px) {
+  header .logo { max-width: calc(100% - 170px); }
+  header #menu { min-width: 70px; gap: 5px; padding: 0 8px; }
+  header .header-home { padding: 6px 8px; }
+}
+
+
+/* V28.05 — hiérarchie visuelle du bouton Menu et adresse officielle unique. */
+@media (max-width: 950px) {
+  header #menu {
+    font-size: .68rem;
+    font-weight: 700;
+    gap: 5px;
+    min-width: 70px;
+    padding: 0 9px;
+  }
+  header #menu .menu-label {
+    font-size: .68rem;
+    letter-spacing: .01em;
+  }
+  header #menu .menu-lines {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 390px) {
+  header #menu {
+    min-width: 64px;
+    gap: 4px;
+    padding: 0 7px;
+  }
+  header #menu .menu-label { font-size: .64rem; }
+  header #menu .menu-lines { font-size: 1.1rem; }
+}
