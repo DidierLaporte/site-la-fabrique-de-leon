@@ -90,30 +90,56 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/* Fermeture explicite des menus : clic extérieur, sélection d'un lien ou touche Échap. */
+/* V28.02 — navigation par clic extérieur, sans bouton de fermeture visible.
+   Les liens de rubrique et le logo gardent leur comportement normal. */
 function closeNavMenus() {
   document.querySelectorAll('.nav-group.is-open').forEach(item => {
     item.classList.remove('is-open');
     item.querySelector('.nav-trigger')?.setAttribute('aria-expanded', 'false');
   });
 }
+
 document.querySelectorAll('.nav-trigger').forEach(button => {
   button.addEventListener('click', event => {
+    event.preventDefault();
     event.stopPropagation();
     const group = button.closest('.nav-group');
     const opening = !group.classList.contains('is-open');
     closeNavMenus();
-    if (opening) { group.classList.add('is-open'); button.setAttribute('aria-expanded', 'true'); }
+    if (opening) {
+      group.classList.add('is-open');
+      button.setAttribute('aria-expanded', 'true');
+    }
   });
 });
+
 document.addEventListener('click', event => {
-  if (!event.target.closest('.nav-group')) closeNavMenus();
-});
-document.addEventListener('keydown', event => { if (event.key === 'Escape') closeNavMenus(); });
-document.querySelectorAll('.nav-dropdown a').forEach(a => a.addEventListener('click', () => {
+  const target = event.target;
+  const clickedTrigger = target.closest?.('.nav-trigger');
+  const clickedDropdownLink = target.closest?.('.nav-dropdown a');
+  if (clickedTrigger || clickedDropdownLink) return;
+
+  // Un clic sur une zone libre de la page referme le sous-menu.
+  // Les autres liens (dont le logo d’accueil) conservent leur navigation.
   closeNavMenus();
-  setMobileMenu(false);
-}));
+
+  // Le panneau hamburger se ferme aussi dès que l’on clique hors de l’en-tête.
+  if (header?.classList.contains('open') && !target.closest?.('header')) setMobileMenu(false);
+});
+
+document.querySelectorAll('.nav-dropdown a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeNavMenus();
+    setMobileMenu(false);
+  });
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    closeNavMenus();
+    setMobileMenu(false);
+  }
+});
 
 /* V26.41 — compte à rebours automatique vers le troisième jeudi d'août. */
 function thirdThursdayOfAugust(year) {

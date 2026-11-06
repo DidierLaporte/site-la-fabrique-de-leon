@@ -1,11 +1,43 @@
-VERSION V27.96 — CORRECTION MOBILE
+VERSION V27.97 — HARMONISATION VISUELLE, NAVIGATION ET INFORMATIONS LÉGALES
 Date : 6 novembre 2026
+Base : La_Fabrique_de_Leon_V27.96_CORRECTION_MOBILE_CORRIGEE
 
-- Page « Découvrir / Léon en Rue Libre » : l'affiche illustrée n'est plus masquée sur mobile.
-- L'affiche est affichée à la largeur disponible, sans recadrage de son contenu.
-- Le texte explicatif mobile déjà présent est conservé sous l'affiche.
-- La présentation ordinateur n'est pas modifiée.
-- Vérification des liens vers le Calculateur / caisse repas : les liens présents dans les pages concernées pointent vers https://gb2b.github.io/leon-calcul/ .
-- Le fonctionnement réel du calculateur reste à valider dans un navigateur.
+MODIFICATIONS
+- En-tête : correction du chevauchement du menu sur les écrans intermédiaires. Le menu reste horizontal sur les grands écrans et passe en menu compact avant que le bloc identité et la navigation ne se chevauchent.
+- Page d’accueil : remplacement de l’illustration répétée de la rubrique « Contacter la Fabrique » par une illustration de bulles de dialogue.
+- Page d’accueil : remplacement du mégaphone de la rubrique « Rejoignez la Fabrique ! » par le logo officiel de La Fabrique de Léon.
+- Page d’accueil : ordre et contenu des autres pavés conservés.
+- Visuel « Léon en Rue Libre » : création d’une version recadrée à partir de l’image existante afin que l’illustration remplisse mieux son cadre, sans étirer ni déformer le visuel.
+- Pied de page : suppression des répétitions du nom de l’association et de la mention interne de version. Ajout d’une signature et de liens légaux cohérents sur les pages.
+- Mentions légales : intégration des coordonnées fournies par l’association : 156 rue des Marguerites, 40550 Léon ; RNA W401004273 ; SIREN 821 985 827 ; SIRET 821 985 827 00012 ; téléphone 06 07 69 14 49 ; courriel lafabriquedeleon40@gmail.com ; directeur de publication Didier Laporte, vice-président.
+- Hébergement et domaine : GitHub Pages reste l’hébergeur du site ; le domaine lafabriquedeleon.fr est géré chez OVHcloud. Ajout du fichier CNAME à la racine pour conserver le domaine personnalisé lors des republications.
+- Confidentialité : rédaction des rubriques sur les finalités, bases juridiques, destinataires, durées proposées, services externes identifiés dans le code actuel et droits des personnes.
+- Droit à l’image : contenu conservé sans modification.
 
-La version V27.95 reste en ligne jusqu'à validation et publication explicite de cette version.
+POINTS À VÉRIFIER AVANT PUBLICATION
+- Vérifier dans un navigateur réel l’affichage de l’en-tête à plusieurs largeurs d’écran et le comportement du menu compact.
+- Vérifier l’image recadrée sur ordinateur et mobile, notamment la lisibilité de l’affiche.
+- Vérifier les liens des pages légales depuis chaque page.
+- Confirmer les durées de conservation proposées avec le fonctionnement réel de l’association et ses obligations.
+- Vérifier la fin de la validation DNS GitHub Pages, l’émission du certificat et l’activation de l’option HTTPS pour lafabriquedeleon.fr.
+- Vérifier les coordonnées et mentions légales avant publication définitive.
+
+STATUT
+Version de travail candidate à vérification. Ne pas considérer comme publiée ou validée avant recette sur iMac, tablette et téléphone.
+
+
+V28.00 — Navigation avec retour explicite depuis les sous-menus ; harmonisation de l’image Artistes avec le pavé de l’accueil ; affichage du domaine officiel ; clarification GitHub Pages / OVHcloud dans les mentions légales.
+
+V28.01 : navigation simplifiée (fermeture au clic dans les zones libres, bouton discret « Fermer × » en haut du sous-menu) et adresse canonique www.lafabriquedeleon.fr.
+
+
+V28.02 — Pavé artistes harmonisé et responsive ; fermeture des sous-menus par clic sur une zone libre, sans bouton de fermeture ; mentions OVHcloud complétées ; CNAME aligné sur le domaine racine validé dans GitHub Pages.
+
+
+V28.03 — Illustration originale et accès Accueil permanent
+- Remplacement de la photographie de scène du pavé « Proposez votre spectacle » par une illustration originale de masques de théâtre, guitare et chapeau, assortie au style illustré des autres pavés.
+- Illustration responsive : même cadre et même traitement visuel que les autres cartes, avec adaptation en colonne sur téléphone.
+- Ajout d’un bouton « Accueil » visible dans le bandeau supérieur de toutes les pages dotées de l’en-tête.
+- Les sous-menus se ferment toujours par clic extérieur ou touche Échap ; aucun bouton de fermeture encombrant n’est affiché.
+- Adresse principale affichée de façon cohérente : https://lafabriquedeleon.fr/ ; www.lafabriquedeleon.fr reste une adresse alternative.
+- Mentions OVHcloud / GitHub Pages conservées avec distinction claire entre gestion du domaine/DNS et hébergement du site.

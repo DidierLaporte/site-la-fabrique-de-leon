@@ -64,17 +64,18 @@ a.campaign-donation:hover,a.campaign-donation:focus-visible{transform:translateY
 <a aria-label="La Fabrique de Léon — Accueil" class="logo-main" href="index.html#accueil"><img alt="La Fabrique de Léon" src="assets/logo-fabrique-cover.webp"/><span class="logo-text">La Fabrique <span>de Léon</span><small class="brand-tagline">CULTURE · MUSIQUE · SPECTACLES VIVANTS</small></span></a>
 <span class="brand-socials"><a aria-label="Instagram de La Fabrique de Léon" class="brand-social instagram" href="https://www.instagram.com/lafabriquedeleon/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="17.6" rx="5" stroke="currentColor" stroke-width="2.2" width="17.6" x="3.2" y="3.2"></rect><circle cx="12" cy="12" fill="none" r="4.1" stroke="currentColor" stroke-width="2.2"></circle><circle cx="17.7" cy="6.5" fill="currentColor" r="1.25"></circle></svg></a><a aria-label="Facebook de La Fabrique de Léon" class="brand-social facebook" href="https://www.facebook.com/fabrique.leon" rel="noopener noreferrer" target="_blank" title="Facebook"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.7 21v-8.2h2.8l.42-3.2H13.7V7.55c0-.93.26-1.56 1.6-1.56h1.72V3.12A22.2 22.2 0 0 0 14.5 3c-2.5 0-4.2 1.52-4.2 4.32V9.6H7.5v3.2h2.8V21z" fill="currentColor"></path></svg></a></span>
 </div>
-<button aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale" id="menu" type="button">☰</button>
+<button aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale" id="menu" type="button"><span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true">☰</span></button>
 <nav id="navigation-principale" aria-label="Navigation principale">
 <a href="index.html#accueil">Accueil</a>
 <div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Découvrir <span>⌄</span></button><div class="nav-dropdown"><a href="association.html">L’association</a><a href="edition-2027.html">Léon en Rue Libre</a></div></div>
 <div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Les éditions <span>⌄</span></button><div class="nav-dropdown"><a href="editions.html">Toutes les affiches</a></div></div>
 <div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Souvenirs <span>⌄</span></button><div class="nav-dropdown"><a href="souvenirs.html">Photos par année</a><a href="partager-souvenirs.html#partage-formulaire">Partagez vos souvenirs</a></div></div>
-<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Participer <span>⌄</span></button><div class="nav-dropdown"><a href="benevoles.html">Devenir bénévole</a><a href="adhesion.html">Adhérer</a><a href="campagne-2027.html">Collecte 2027</a><a href="soutenir.html#dons">Faire un don</a><a href="artistes.html">Artistes</a></div></div>
+<div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Participer <span>⌄</span></button><div class="nav-dropdown"><a href="benevoles.html">Devenir bénévole</a><a href="adhesion.html">Adhérer</a><a href="campagne-2027.html">Collecte 2027</a><a href="soutenir.html#dons">Faire un don</a><a href="artistes.html">Proposer un spectacle</a></div></div>
 <div class="nav-group"><button aria-expanded="false" class="nav-trigger" type="button">Infos pratiques <span>⌄</span></button><div class="nav-dropdown"><a href="contact.html">Nous contacter</a><a href="partenaires.html">Partenaires</a><a href="mentions-legales.html#infos-legales">Informations légales</a></div></div>
 <a class="nav-member" href="espace-membre.html">Espace membre 🔒</a>
 <a class="header-don" href="soutenir.html#dons">♥ DON</a>
 </nav>
+<a class="header-home" href="index.html#accueil" aria-label="Revenir à l’accueil"><span class="header-home-icon" aria-hidden="true">⌂</span><span>Accueil</span></a>
 </header>
 <main id="accueil">
 <section id="campaign-preview" class="campaign-draft">
@@ -129,6 +130,13 @@ a.campaign-donation:hover,a.campaign-donation:focus-visible{transform:translateY
 </section>
 </section>
 </main>
-<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Campagne 2027 publiée sur HelloAsso · V27.96</p></footer>
+<footer class="site-footer">
+<div class="footer-brand"><strong>La Fabrique de Léon</strong><span>Culture · Musique · Spectacles vivants</span></div>
+<div class="footer-links" aria-label="Informations légales">
+<a href="mentions-legales.html#mentions">Mentions légales</a><a href="mentions-legales.html#confidentialite">Confidentialité</a><a href="mentions-legales.html#image">Droit à l’image</a><a href="mentions-legales.html#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener noreferrer" target="_blank">HelloAsso</a>
+</div>
+<p class="footer-domain">Site officiel : <a href="https://www.lafabriquedeleon.fr/">www.lafabriquedeleon.fr</a></p>
+<p class="footer-copyright">© La Fabrique de Léon — Tous droits réservés.</p>
+</footer>
 <script src="script.js"></script>
 </body></html>

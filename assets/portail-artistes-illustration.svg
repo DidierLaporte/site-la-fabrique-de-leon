@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration festive pour proposer un spectacle</title>
+  <desc id="desc">Masques de théâtre souriant et expressif, guitare, chapeau haut-de-forme et éclats colorés sur des coups de pinceau jaunes et orange.</desc>
+  <defs>
+    <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe64b"/><stop offset="1" stop-color="#ffc928"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff7b32"/><stop offset="1" stop-color="#f04b35"/></linearGradient>
+  </defs>
+  <!-- Brush strokes, deliberately irregular to echo the portal illustrations -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M116 210 C178 115 286 105 382 137 C493 75 624 124 690 213" stroke="#ffd52f" stroke-width="45" opacity=".88"/>
+    <path d="M140 246 C243 169 324 188 408 205 C514 161 604 187 665 239" stroke="#ffdf43" stroke-width="25" opacity=".72"/>
+    <path d="M185 105 l-27 -27 M231 87 l-8 -32 M613 90 l25 -31 M670 132 l34 -13" stroke="#ff7b24" stroke-width="13"/>
+    <path d="M103 167 l-33 -10 M698 184 l34 8 M145 287 l-24 23 M641 286 l26 24" stroke="#f04f35" stroke-width="12"/>
+  </g>
+  <!-- Top hat -->
+  <g stroke="#102536" stroke-width="17" stroke-linejoin="round">
+    <path d="M306 121 Q307 92 333 87 L408 87 Q432 91 435 121 L435 158 L306 158 Z" fill="#102536"/>
+    <path d="M288 155 Q370 139 454 155 L463 178 Q370 194 278 178 Z" fill="#ff6b35"/>
+    <path d="M320 118 L421 118" fill="none" stroke="#ffd52f" stroke-width="13"/>
+  </g>
+  <!-- Left theatre mask: comedy -->
+  <g transform="rotate(-9 290 264)" stroke="#102536" stroke-width="17" stroke-linejoin="round">
+    <path d="M155 220 Q185 173 254 181 Q321 183 345 231 L334 307 Q317 360 253 369 Q184 359 163 310 Z" fill="url(#yellow)"/>
+    <path d="M198 252 Q215 232 232 250 M271 248 Q290 230 307 247" fill="none" stroke-linecap="round"/>
+    <path d="M205 297 Q253 346 306 294" fill="none" stroke="#102536" stroke-width="18" stroke-linecap="round"/>
+    <path d="M199 297 Q252 330 312 292" fill="none" stroke="#fffdf8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- Right theatre mask: expressive -->
+  <g transform="rotate(9 500 263)" stroke="#102536" stroke-width="17" stroke-linejoin="round">
+    <path d="M433 220 Q463 174 526 181 Q592 184 619 230 L609 309 Q589 360 526 369 Q461 359 441 308 Z" fill="url(#orange)"/>
+    <path d="M470 247 Q487 228 504 247 M543 250 Q560 231 578 251" fill="none" stroke-linecap="round"/>
+    <path d="M474 311 Q526 267 579 311" fill="none" stroke="#102536" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <!-- Guitar silhouette on the right -->
+  <g transform="rotate(12 680 260)" stroke="#102536" stroke-width="14" stroke-linejoin="round">
+    <path d="M660 240 L684 92 L714 96 L694 244" fill="#ffbd26"/>
+    <path d="M669 242 Q636 213 617 241 Q600 267 620 292 Q635 313 665 298 Q686 323 709 303 Q737 279 715 251 Q697 228 669 242 Z" fill="#ffcf2f"/>
+    <circle cx="665" cy="270" r="15" fill="#102536" stroke="none"/>
+    <path d="M696 96 L723 69 M684 94 L674 62 M710 98 L737 78" fill="none" stroke-linecap="round" stroke-width="10"/>
+    <path d="M678 101 L657 253" fill="none" stroke="#fff5c8" stroke-width="5"/>
+  </g>
+  <!-- Small festive stars and notes -->
+  <g fill="#f04f35" stroke="#102536" stroke-width="6" stroke-linejoin="round">
+    <path d="M91 306 l12 22 24 3 -18 17 5 24 -23 -12 -21 13 4 -25 -19 -16 25 -4z"/>
+    <path d="M728 315 l9 17 19 2 -14 13 4 19 -18 -9 -16 10 3 -19 -14 -13 19 -3z" fill="#ffd52f"/>
+  </g>
+  <g fill="#102536">
+    <path d="M92 105 q-13 -24 4 -31 q17 -7 19 11 q1 15 -23 20z"/>
+    <path d="M744 122 q-7 -18 7 -25 q16 -8 22 9 q4 14 -29 16z"/>
+  </g>
+</svg>
