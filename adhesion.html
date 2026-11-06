@@ -37,7 +37,27 @@ body[data-fab-page]:not([data-fab-page="home"]) main { padding-top: 1.5rem; }
 }
 @media (max-width: 520px) { .shortcuts-grid { grid-template-columns: minmax(0, 1fr) !important; } .shortcut-card { min-height: 0 !important; } }
 </style>
-<style>.adhesion-page{padding:clamp(28px,5vw,72px) clamp(16px,4vw,56px);background:linear-gradient(135deg,#fff8eb 0%,#e8f6ef 52%,#fff0e8 100%)}.adhesion-page .adhesion-section{max-width:1180px;margin:0 auto;padding:0;background:transparent}.adhesion-page .adhesion-promo{margin:0 auto}.adhesion-page .adhesion-promo-image{display:block;width:100%;height:auto;border-radius:22px}.adhesion-page .adhesion-image-cta{margin-top:18px}@media(max-width:640px){.adhesion-page{padding:22px 12px;overflow:hidden}.adhesion-page .adhesion-promo{width:100%;overflow:hidden;border-radius:14px}.adhesion-page .adhesion-promo-image{width:150%;max-width:none;margin-left:-25%;border-radius:14px}.adhesion-page .adhesion-image-cta{display:flex;width:100%;box-sizing:border-box;justify-content:center;font-size:1rem;padding:15px 12px}}</style>
+<style>
+.adhesion-page{padding:clamp(28px,5vw,72px) clamp(16px,4vw,56px);background:linear-gradient(135deg,#fff8eb 0%,#e8f6ef 52%,#fff0e8 100%)}
+.adhesion-page .adhesion-section{max-width:1180px;margin:0 auto;padding:0;background:transparent}
+.adhesion-page .adhesion-promo{margin:0 auto;max-width:1180px}
+.adhesion-page .adhesion-poster-link{display:block;border-radius:22px;overflow:hidden}
+.adhesion-page .adhesion-promo-image{display:block;width:100%;height:auto;border-radius:22px}
+.adhesion-mobile-content{display:none}
+@media(max-width:640px){
+  .adhesion-page{padding:14px 12px 28px;overflow:hidden;background:#fffdf8}
+  .adhesion-page .adhesion-promo{width:100%;overflow:hidden;border-radius:16px;background:#fffdf8;box-shadow:0 8px 24px rgba(20,43,59,.09)}
+  .adhesion-page .adhesion-poster-link{height:150px;border-radius:16px 16px 0 0}
+  .adhesion-page .adhesion-promo-image{width:100%;height:100%;max-width:none;object-fit:cover;object-position:88% 50%;border-radius:0}
+  .adhesion-mobile-content{display:block;padding:20px 20px 22px;color:#142b3b}
+  .adhesion-mobile-content h1{margin:0 0 8px;font-size:clamp(1.45rem,6vw,1.9rem);line-height:1.12;color:#142b3b}
+  .adhesion-mobile-lead{margin:0 0 14px;color:#ef641f;font-size:1.05rem;font-weight:750;line-height:1.35}
+  .adhesion-mobile-content ul{margin:0 0 18px;padding:0;list-style:none;display:grid;gap:10px}
+  .adhesion-mobile-content li{position:relative;padding-left:29px;font-size:1rem;line-height:1.4;color:#526575}
+  .adhesion-mobile-content li:before{content:"✓";position:absolute;left:0;top:0;color:#e95f48;font-weight:900;font-size:1.1rem}
+  .adhesion-mobile-button{display:flex;width:100%;min-height:52px;box-sizing:border-box;align-items:center;justify-content:center;gap:10px;margin:0;padding:13px 16px;border-radius:14px;background:#ef604f;color:#fff;font-size:1rem;font-weight:800;text-align:center;text-decoration:none;box-shadow:none}
+}
+</style>
 </head>
 <body data-fab-page="adhesion">
 <header>
@@ -60,12 +80,24 @@ body[data-fab-page]:not([data-fab-page="home"]) main { padding-top: 1.5rem; }
 <main id="adhesion-page" class="adhesion-page">
 <section class="donations-section adhesion-section" id="adhesion">
 <div class="adhesion-promo adhesion-image-only">
+<a class="adhesion-poster-link" aria-label="Adhérer à La Fabrique de Léon — ouvrir HelloAsso" href="https://www.helloasso.com/associations/la-fabrique-de-leon/adhesions/adherer-a-la-fabrique-de-leon" rel="noopener" target="_blank">
 <img alt="Adhérez à La Fabrique de Léon : musique, partage et convivialité pour faire vivre un festival gratuit et ouvert à tous." class="adhesion-promo-image" src="assets/adhesion-festive-banner.webp"/>
-<a aria-label="J’adhère à La Fabrique de Léon — ouvrir le formulaire HelloAsso" class="btn adhesion-cta adhesion-image-cta" href="https://www.helloasso.com/associations/la-fabrique-de-leon/adhesions/adherer-a-la-fabrique-de-leon" rel="noopener" target="_blank"><span aria-hidden="true">👥</span> J’adhère à La Fabrique <span aria-hidden="true">→</span></a>
+</a>
+<div class="adhesion-mobile-content">
+<h1>Adhérez à La Fabrique de Léon</h1>
+<p class="adhesion-mobile-lead">Soutenez une aventure musicale, humaine et conviviale !</p>
+<ul>
+<li>Un festival gratuit et ouvert à tous</li>
+<li>La vie de notre association</li>
+<li>La culture et les rencontres à Léon</li>
+<li>Une équipe de bénévoles passionnés</li>
+</ul>
+<a aria-label="J’adhère à La Fabrique de Léon — ouvrir le formulaire HelloAsso" class="btn adhesion-cta adhesion-mobile-button" href="https://www.helloasso.com/associations/la-fabrique-de-leon/adhesions/adherer-a-la-fabrique-de-leon" rel="noopener" target="_blank">J’adhère à La Fabrique <span aria-hidden="true">→</span></a>
+</div>
 </div>
 </section>
 </main>
-<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Version de travail V27.81</p></footer>
+<footer><strong>La Fabrique de Léon</strong><span>© La Fabrique de Léon</span><span class="footer-links"><a href="#mentions">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#image">Droit à l’image</a><a href="#cgu">CGU</a><a href="https://www.helloasso.com/associations/la-fabrique-de-leon" rel="noopener" target="_blank">HelloAsso</a></span><p class="version-note">La Fabrique de Léon · Version de travail V27.95</p></footer>
 <script src="script.js"></script>
 <script>
 /* V27.17 — Ouverture directe des rubriques légales depuis le menu Infos pratiques. */
