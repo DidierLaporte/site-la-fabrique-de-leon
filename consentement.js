@@ -23,12 +23,9 @@
   }
 
   function enregistrer(choix) {
-    localStorage.setItem(STORAGE_KEY, choix);
-    if (choix === 'oui') {
-      chargerAnalytics();
-    }
-    window.location.reload();
-  }
+  localStorage.setItem(STORAGE_KEY, choix);
+  window.location.reload();
+}
 
   function afficherBanniere() {
     if (document.getElementById('fabrique-consentement')) return;
