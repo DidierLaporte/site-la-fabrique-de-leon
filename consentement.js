@@ -3,7 +3,7 @@
   const GA_ID = 'G-97YL91NRQN';
   const STORAGE_KEY = 'fabrique_consentement_analytics';
 
-  function chargerAnalytics() {
+   function chargerAnalytics() {
     if (window.fabriqueAnalyticsCharge) return;
     window.fabriqueAnalyticsCharge = true;
 
@@ -12,6 +12,20 @@
       window.dataLayer.push(arguments);
     }
     window.gtag = gtag;
+
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
 
     gtag('js', new Date());
     gtag('config', GA_ID);
