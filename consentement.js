@@ -39,8 +39,9 @@
   transform: translateX(-50%);
   bottom: 14px;
   width: calc(100% - 32px);
-  max-width: 680px;
+  max-width: 560px;
   box-sizing: border-box;
+  text-align: center;
   padding: 20px 24px;
   background: #fffdf7;
   color: #263746;
@@ -51,7 +52,7 @@
 }
 
 #fabrique-consentement p {
-  margin: 10px 0 18px;
+  margin: 10px 0 16px;
 }
 
 #fabrique-consentement .actions {
