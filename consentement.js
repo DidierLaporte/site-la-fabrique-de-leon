@@ -100,7 +100,7 @@
     bandeau.id = 'fabrique-consentement';
     bandeau.innerHTML = `
       <strong>Votre confidentialité</strong>
-      <p>Nous utilisons des cookies de mesure d'audience pour mieux connaître la fréquentation du site. Vous êtes libre de les accepter ou de les refuser.</p>
+   <p>Nous utilisons des cookies pour mesurer la fréquentation du site.</p>
       <div class="actions">
         <button type="button" id="fabrique-accepter">Accepter</button>
         <button type="button" id="fabrique-refuser">Refuser</button>
