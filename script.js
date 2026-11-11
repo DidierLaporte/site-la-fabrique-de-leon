@@ -50,7 +50,7 @@ if(unlockForm) unlockForm.addEventListener('submit',async e=>{
   else { errorMessage.hidden=false; passwordInput.value=''; passwordInput.focus(); }
 });
 if(lockButton) lockButton.addEventListener('click',lockTools);
-['click','keydown','mousemove','touchstart'].forEach(evt=>document.addEventListener(evt,()=>{if(!toolsContent.hidden) resetInactivityTimer();},{passive:true}));
+if (toolsContent) ['click','keydown','mousemove','touchstart'].forEach(evt=>document.addEventListener(evt,()=>{if(!toolsContent.hidden) resetInactivityTimer();},{passive:true}));
 // Ouvre automatiquement la rubrique légale ciblée depuis le pied de page
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.footer-links a[href^="#"]').forEach(link => {
